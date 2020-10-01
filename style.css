@@ -33,7 +33,7 @@ a {
 
 /*NAV*/
 .main-head {
-  min-height: 15vh;
+  min-height: 12vh;
   display: flex;
   background: var(--grayish-blue);
   position: relative;
@@ -59,10 +59,54 @@ nav ul {
   flex: 1 1 40rem;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 .logo {
   flex: 0 1 20rem;
 }
+
+
+.dropbtn {
+ 
+
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:var(--lighter-grayish);
+width: 20rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border:none;
+top: 180%;
+left:0%;
+  border-radius: 2rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:var(--light-grayish);
+  color:white;;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
 
 nav li a:hover {
   color: #5d6163;
@@ -300,7 +344,6 @@ nav li a:hover {
 
 /*Section-why*/
 .section-why {
-  min-height: 90vh;
   background: var(--light-grayish);
 }
 
@@ -308,7 +351,7 @@ nav li a:hover {
   font-size: 4rem;
   text-align: center;
   /* font-family: "Roboto Condensed", sans-serif; */
-  padding: 5rem;
+  padding: 3rem 0 1.5rem 0;
 }
 .section-why .blocks {
   display: flex;
@@ -316,6 +359,7 @@ nav li a:hover {
   flex-direction: column;
   width: 90%;
   transform: scale(0.9);
+  padding-bottom: 3rem;
 }
 .section-why .block1,
 .section-why .block2 {
@@ -360,7 +404,6 @@ nav li a:hover {
 
 /*Section Blogs*/
 .section-blog {
-  min-height: 80vh;
   background: var(--lighter-grayish);
 }
 .section-blog h2 {
@@ -381,6 +424,7 @@ nav li a:hover {
   display: flex;
   transform: scale(1);
   transition: transform 0.3s;
+  margin-bottom: 8rem;
 }
 .blog-image {
   width: 100%;
@@ -405,7 +449,7 @@ nav li a:hover {
 }
 
 .section-blog p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: muli;
   width: 90%;
   font-weight: 400;
@@ -420,7 +464,6 @@ footer {
 footer .main {
   background: var(--light-grayish);
   width: 100%;
-  height: 60vh;
 }
 
 footer .main {
@@ -429,12 +472,17 @@ footer .main {
 .grid1 {
   flex: 1 1 20rem;
   margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 .grid1 h3,
-.grid2 h3,
-.grid3 h3 {
+.grid2 h3 {
   font-size: 3rem;
   padding: 2rem;
+  color: var(--dark-silver);
+}
+.grid3 h3 {
+  padding: 2rem 0;
+  font-size: 3rem;
   color: var(--dark-silver);
 }
 .grid1 ul {
@@ -484,9 +532,9 @@ footer ul li a {
 
 footer .small {
   background: var(--medium-silver);
-  height: 3vh;
   width: 100%;
   text-align: center;
+  padding: 1.5rem;
 }
 
 footer .small p {
@@ -499,27 +547,26 @@ footer .small p {
   list-style: none;
   display: flex;
 }
-.social-media-links {
-  padding: 2rem;
-}
+
 .social-media-links ul li {
   width: 15%;
 }
 .social-media-links ul a img {
   width: 5rem;
+  margin-bottom: 2rem;
 }
 
 /*FAQS AND TESTIMONIALS*/
 .faqs-testimonials-section {
   display: flex;
-  min-height: 60vh;
+
   background: var(--grayish-blue);
 }
 .faqs-section {
   flex: 1 1 20rem;
 }
 .faqs-section h2 {
-  text-align: center;
+  margin-left: 12rem;
   padding: 2rem;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -535,7 +582,7 @@ footer .small p {
   color: black;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
+  width: 90%;
   text-align: left;
   outline: none;
   font-size: 1.5rem;
@@ -544,7 +591,7 @@ footer .small p {
   border: none;
   border-radius: 2rem;
   margin-top: 1.5rem;
-  margin-left: 23rem;
+  margin-left: 12rem;
   position: relative;
 }
 .accordion img {
@@ -573,7 +620,7 @@ footer .small p {
 .testimonials-section .blocks {
   /* background: var(--lighter-grayish); */
   height: 45vh;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto 5rem auto;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -589,7 +636,6 @@ footer .small p {
   flex-direction: column;
   align-items: center;
   position: relative;
- 
 }
 
 .testimonials-section h2 {
@@ -627,7 +673,6 @@ h5 {
   font-style: italic;
 }
 
-
 @keyframes display {
   0% {
     transform: translateX(200px);
@@ -653,7 +698,6 @@ h5 {
 
 /*BRANDS */
 .brands-section {
-  min-height: 40vh;
   background: var(--lighter-grayish);
 }
 .brand-wrapper {
@@ -662,11 +706,12 @@ h5 {
   align-items: baseline;
 }
 .brands-section h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 3rem;
 }
 .brand-wrapper img {
-  width: 10%;
-  margin-top: 5rem;
+  width: 8%;
+
+  margin-bottom: 5rem;
 }
