@@ -12,6 +12,8 @@ html {
   --light-grayish: #bdc5c9;
   --lighter-grayish: #d5dee3;
   --grayish-blue: #e1eaf0;
+  --theme-red:#c04039;
+  --theme-blue:#282f63;
 }
 html,
 body {
@@ -100,7 +102,7 @@ left:0%;
 }
 
 .dropdown-content a:hover {background-color:var(--light-grayish);
-  color:red;}
+  color:#c04039;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -119,7 +121,7 @@ left:0%;
 }
 
 nav li a:hover {
-  color: red;
+  color:#c04039;
 }
 .side-nav {
   position: relative;
@@ -132,7 +134,7 @@ nav li a:hover {
   width: 40px;
 }
 .phone a:hover {
-  color: blue;
+  color: #282f63;
 }
 
 /*HERO SECTION*/
@@ -171,6 +173,7 @@ nav li a:hover {
 }
 .hero-text button:hover {
   background: #bdc5c9;
+  color:#c04039;
 }
 
 .hero-text img {
@@ -305,6 +308,7 @@ nav li a:hover {
 .highlights figcaption:hover {
   background: var(--lighter-grayish);
   cursor: pointer;
+  color:var(--theme-red);
 }
 
 /*SECTION SERVICES*/
@@ -367,8 +371,9 @@ nav li a:hover {
 }
 
 .service-wrapper figcaption:hover {
-  color: var(--dark-silver);
+  color: var(--theme-blue);
   font-size: 1.4rem;
+  
 }
 
 /*Section-why*/
@@ -429,6 +434,7 @@ nav li a:hover {
 }
 .section-why .box:hover {
   transform: scale(0.9);
+  background: var(--theme-red)
 }
 
 /*Section Blogs*/
