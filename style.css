@@ -68,7 +68,7 @@ nav ul {
 
 .dropbtn {
  
-
+position: relative;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -100,16 +100,26 @@ left:0%;
 }
 
 .dropdown-content a:hover {background-color:var(--light-grayish);
-  color:white;;}
+  color:red;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 
+.dropbtn img{
+  width:12%;
+  position: absolute;
+  top:42%;
+  left:90%;
+  animation: bouncing 2s ;
+}
 
-
+.dropdown:hover .dropbtn img{
+  opacity: 0.5;
+  animation: none;
+}
 
 nav li a:hover {
-  color: #5d6163;
+  color: red;
 }
 .side-nav {
   position: relative;
@@ -122,7 +132,7 @@ nav li a:hover {
   width: 40px;
 }
 .phone a:hover {
-  color: #5d6163;
+  color: blue;
 }
 
 /*HERO SECTION*/
@@ -203,6 +213,25 @@ nav li a:hover {
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
+  }
+}
+@keyframes bouncing {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  60% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 /*About Section*/
@@ -461,6 +490,7 @@ nav li a:hover {
 footer {
   display: flex;
   flex-direction: column;
+  min-height: 45vh;
 }
 footer .main {
   background: var(--light-grayish);
@@ -560,7 +590,7 @@ footer .small p {
 /*FAQS AND TESTIMONIALS*/
 .faqs-testimonials-section {
   display: flex;
-
+  min-height: 65vh;
   background: var(--grayish-blue);
 }
 .faqs-section {
@@ -613,6 +643,7 @@ footer .small p {
   overflow: hidden;
   width: 60%;
   margin-left: 20rem;
+  transition: display 0.2s;
 }
 .panel p {
   font-size: 1.3rem;
@@ -621,7 +652,7 @@ footer .small p {
 .testimonials-section .blocks {
   /* background: var(--lighter-grayish); */
   height: 45vh;
-  margin: 1rem auto 5rem auto;
+  margin: 4rem auto 5rem auto;
   display: flex;
   position: relative;
   overflow: hidden;
