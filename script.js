@@ -9,6 +9,8 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "none";
     } else {
       panel.style.display = "block";
+      panel.style.transition="all 0.5s ease-in-out"
+      
     }
   });
 }

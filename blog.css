@@ -1,0 +1,127 @@
+.page-blog {
+    background: var(--lighter-grayish);
+    padding-bottom: 7rem;
+    
+  }
+  .page-blog h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem;
+    font-weight: 600;
+    
+  }
+  .page-blog .blocks {
+    display: flex;
+    justify-content: center;
+   
+    
+  }
+  .header{
+      z-index: 100000;
+      position: relative;
+      line-break: normal;
+  }
+
+
+.video-content{
+    width:100%;
+    height:20vh;
+    position:absolute;
+   top:0;
+   z-index: -100;
+}
+.video-content video{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+}
+
+  .first-block{
+      padding-top: 10rem;
+  }
+  .page-blog .box {
+    width: 50rem;
+    height: 55rem;
+    border-radius: 2rem;
+    margin: 1.5rem;
+    background: var(--grayish-blue);
+    display: flex;
+    transform: scale(1);
+    transition: transform 0.3s;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .page-blog .box:hover{
+    background: var(--theme-blue);
+  
+  }
+  
+  
+  .blog-image {
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+  .page-blog a {
+    width: 100%;
+    margin: 0 auto;
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-blog a h3 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .page-blog a:hover{
+    color:white;
+  }
+  
+  .blog-icon {
+    width: 5%;
+    margin-top: 1rem;
+  }
+  
+  .page-blog p {
+    font-size: 1.7rem;
+  
+    width: 90%;
+    font-weight: 600;
+    margin: 1rem auto;
+  }
+  
+  .pagination {
+    display: flex;
+    width:30%;
+  margin:4rem auto 0 auto;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 1rem 1rem;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: var(--theme-red);
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: var(--theme-blue);}
+  
+  .blog-head{
+      width:100%;
+     
+      height: 20vh;
+      margin-bottom: 3rem;
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('./Assets/images/5.jpg');
+      object-fit: cover;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+  }
+  .blog-head h2{
+      color:white;
+  }
