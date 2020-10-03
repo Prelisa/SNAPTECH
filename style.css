@@ -536,13 +536,10 @@ nav li a:hover {
   background-color: var(--lighter-grayish);
   color: black;
   cursor: pointer;
-  padding: 1.8rem;;
+  padding: 1.8rem;
   width: 90%;
-  text-align: left;
   outline: none;
   font-size: 1.7rem;
-  transition: 0.4s;
-  text-align: center;
   border: none;
   border-radius: 2rem;
   margin-top: 1.5rem;
@@ -557,6 +554,11 @@ nav li a:hover {
   left: 5%;
 }
 
+.accordion .title{
+  
+  margin-left:10%;
+  text-align: left;
+}
 .accordion:hover {
   background-color: var(--theme-blue);
   color: white;
