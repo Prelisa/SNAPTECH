@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    --dark-silver: #5d6163;
+    --medium-silver: #a3aaae;
+    --light-grayish: #bdc5c9;
+    --lighter-grayish: #d5dee3;
+    --grayish-blue: #e1eaf0;
+    --theme-red: #c04039;
+    --theme-blue: #282f63;
+  }
+
+
+  .contact-page{
+      background: var(--light-grayish);
+  }
+  .contact-map{
+      width:100%;
+      height:40vh;
+      background: #000;
+  }
+
+  .contact-detail-wrapper{
+      display: flex;
+  }
+  .contact-form{
+      flex: 1 1 20rem;
+      display: flex;
+      flex-direction: column;
+      background:var(--medium-silver);
+  }
+  .contact-form header h2{
+      font-size: 3rem;
+      padding:2rem 2rem 0 2rem;
+      margin-left:5rem;
+  }
+  form{
+      
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding: 2rem;
+      border:none;
+      border-radius:2rem;
+      margin-left:5rem;
+      
+  }
+  form input{
+      margin-top:1rem;
+      padding:1rem;
+      border:none;
+      border-radius:1rem;
+      font-family: mulish;
+      background: var(--grayish-blue);
+      
+  }
+ 
+  form textarea{
+      margin-top:1rem;
+      border:none;
+      padding:1rem;
+      border-radius: 1rem;
+      font-family: mulish;
+      background: var(--grayish-blue)
+
+  }
+  form button{
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin-top:2rem;
+      border:none;
+      background-color:var(--theme-blue);
+      color:white;
+      transition: all 0.2s ease-in;
+      cursor:pointer;
+  }
+  form button:hover{
+      background-color: var(--theme-red);
+      
+  }
+  .company-details{
+      flex: 1 1 20rem;
+      background: var(--medium-silver);
+      width:100%;
+      height: 60vh;
+  }
+  .company-details .contact-information img{
+      width:3.5%;
+  }
+
+  .company-details .company-logo{
+      width:70%;
+      margin-left:-1rem;
+  }
+  .company-details .contact-information{
+      display: flex;
+  }
+
+  .company-details .title h2{
+      font-size: 3rem;
+      padding:2rem 0;
+  }
+
+  .company-details .contact-information{
+      padding:2rem;
+      
+  }
+  .company-details p{
+      margin-left:1.5rem;
+  }
+  .company-details .contact-details{
+      width:60%;
+      background: var(--grayish-blue);
+      border-radius: 2rem;
+  }
+
+  .company-details p:hover{
+      color: var(--theme-red);
+      cursor: pointer;
+  }
+
+  .contact-map iframe{
+      width:100%;
+      height:40vh;
+    
+  }
+  
