@@ -1,0 +1,115 @@
+.career-block{
+    width:70%;
+    margin:auto auto 15rem auto;
+}
+
+.accordion-career {
+    background-color: var(--lighter-grayish);
+    color: black;
+    cursor: pointer;
+    padding: 2rem;
+   width:100%;
+    outline: none;
+    font-size: 1.7rem;
+    border: none;
+    margin:1rem auto;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .accordion-career:hover {
+    background-color: var(--theme-blue);
+    color: white;
+   
+  }
+  .accordion-career::after{
+      content: '\002B';
+      font-size: 4rem;
+      position: absolute;
+      color:var(--theme-red);
+      top: 25%;
+      right: 5%;
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .accordion-career.active:after{
+      transform: rotate(45deg);
+  }
+  
+  .active{
+    background: var(--theme-blue);
+    color:white;
+  }
+
+  
+  
+  .panel-career{
+    padding:1rem;
+    background-color: var(--grayish-blue);
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.5s ease-in;
+  }
+  
+  .panel-career p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding:1rem;
+  }
+
+  .panel-career h3{
+      font-size: 2rem;
+      padding:1rem;
+  }
+  
+
+.accordion-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.accordion-career.active+.accordion-body{
+    max-height: 1000px;
+}
+
+  .career-page h2{
+      font-size: 4rem;
+      text-align: center;
+      padding:8rem 2rem 8rem 2rem;
+  }
+
+  .accordion-career .title{
+      text-align: left;
+  }
+
+  .career-page .title {
+      display: flex;
+      justify-content: space-between;
+      width:80%;
+      margin: auto auto auto 1rem;
+      /* background: #000; */
+  }
+  .career-page .title h4{
+      font-weight: 400;
+  }
+
+  .career-page h5{
+      color:green;
+  }
+
+  .career-page .title h1{
+      font-size:1.8rem;
+  }
+  .career-page .title img{
+      position: absolute;
+      left:-25%;
+      width:20%;
+      top:-5%;
+      
+  }
+  .career-page .title .location{
+      position: relative;
+  }
+
+  

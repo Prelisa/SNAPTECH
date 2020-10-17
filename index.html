@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQuery.css">
     <title>SnapTech Technology</title>
 </head>
 
@@ -40,7 +43,21 @@
 
                 </li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">IT Services</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Services
+                            <img src="./Assets/icons/company-expand.svg" alt="">
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">CCTV</a>
+                            <a href="#">Laptops</a>
+                            <a href="#">Routers</a>
+                            <a href="#">Microphone</a>
+
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
@@ -232,66 +249,91 @@
     <section class="faqs-testimonials-section">
         <div class="faqs-section">
             <h2>Frequently Asked Questions</h2>
+            <div class="accordion-item">
+                <button class="accordion">
+                    <div class="title">
+                        What is your business about?
+                    </div>
 
-            <button class="accordion">
-                <img src="./Assets/icons/expand-button.svg" alt="">
-                <div class="title">
-                    What is your business about?
+                </button>
+                <div class="accordion-body">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
-
-            </button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
             </div>
-
-            <button class="accordion">
-                <img src="./Assets/icons/expand-button.svg" alt="">
-                <div class="title">
-                    What kind of customer support do you give?
+            <div class="accordion-item">
+                <button class="accordion">
+                    <div class="title">
+                        What kind of customer support do you give?
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
-            </button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
             </div>
-
-            <button class="accordion">
-                <img src="./Assets/icons/expand-button.svg" alt="">
-                <div class="title">
-                    What do I need to do to get service?
+            <div class="accordion-item">
+                <button class="accordion">
+                    <div class="title">
+                        What do I need to do to get service?
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
-            </button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
             </div>
-
-            <button class="accordion">
-                <img src="./Assets/icons/expand-button.svg" alt="">
-                <div class="title">
-                    When should we expect our work to be done?
+            <div class="accordion-item">
+                <button class="accordion">
+                    <div class="title">
+                        When should we expect our work to be done?
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
-            </button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
             </div>
-
-            <button class="accordion">
-                <img src="./Assets/icons/expand-button.svg" alt="">
-                <div class="title">
-                    Where are you located?
+            <div class="accordion-item">
+                <button class="accordion">
+                    <div class="title">
+                        Where are you located?
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
-            </button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
             </div>
         </div>
 

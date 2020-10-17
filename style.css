@@ -70,7 +70,7 @@ nav ul {
 .dropbtn {
   position: relative;
   padding: 16px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
 }
 
@@ -89,7 +89,6 @@ nav ul {
   border: none;
   top: 180%;
   left: 0%;
-  
 }
 
 .dropdown-content a {
@@ -102,12 +101,10 @@ nav ul {
 .dropdown-content a:hover {
   background-color: var(--light-grayish);
   color: #c04039;
-
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  
 }
 
 .dropbtn img {
@@ -121,7 +118,6 @@ nav ul {
 .dropdown:hover .dropbtn img {
   opacity: 0.5;
   animation: none;
-
 }
 
 nav li a:hover {
@@ -177,11 +173,10 @@ nav li a:hover {
   transition: all 0.2s ease-out;
 }
 .hero-text button:hover {
-  background:var(--theme-blue);
+  background: var(--theme-blue);
   color: var(--theme-red);
-  cursor:pointer;
+  cursor: pointer;
 }
-
 
 .hero-text img {
   margin-left: 5rem;
@@ -246,11 +241,11 @@ nav li a:hover {
 }
 /*About Section*/
 .section-about {
-  min-height: 60vh;
+ padding-bottom:10rem;
   background: var(--grayish-blue);
 }
 .section-wrapper {
-  min-height: 40vh;
+  padding-bottom:20rem;
   background-color: var(--light-grayish);
   position: relative;
 }
@@ -273,12 +268,13 @@ nav li a:hover {
 }
 
 .highlights {
-  width: 80%;
+  width:80%;
   display: flex;
   position: absolute;
   justify-content: space-evenly;
   top: 50%;
   left: 10%;
+  flex-wrap: wrap;
 }
 .highlights img {
   width: 100%;
@@ -301,7 +297,7 @@ nav li a:hover {
   padding: 2rem 3rem;
   border: none;
   border-radius: 1rem;
- 
+
   transition: all 0.2s ease-in-out;
 }
 
@@ -314,7 +310,7 @@ nav li a:hover {
 
 .highlights figcaption:hover {
   background: var(--theme-blue);
- 
+
   cursor: pointer;
   color: white;
 }
@@ -322,13 +318,13 @@ nav li a:hover {
 /*SECTION SERVICES*/
 .section-services {
   background: var(--grayish-blue);
-  min-height: 80vh;
+  padding-bottom: 20rem;
 }
 .section-services h1 {
   font-size: 4rem;
   /* font-family: "Roboto Condensed", sans-serif; */
   text-align: center;
-  padding: 6rem 0 4rem 0;
+  padding: 10rem 0 4rem 0;
 }
 
 .service-wrapper {
@@ -456,7 +452,6 @@ nav li a:hover {
 .section-blog .blocks {
   display: flex;
   justify-content: center;
-  
 }
 .section-blog .box {
   width: 50rem;
@@ -471,11 +466,9 @@ nav li a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-.section-blog .box:hover{
+.section-blog .box:hover {
   background: var(--theme-blue);
-
 }
-
 
 .blog-image {
   width: 100%;
@@ -494,8 +487,8 @@ nav li a:hover {
   text-align: center;
   padding-top: 2rem;
 }
-.section-blog a:hover{
-  color:white;
+.section-blog a:hover {
+  color: white;
 }
 
 .blog-icon {
@@ -511,11 +504,10 @@ nav li a:hover {
   margin: 1rem auto;
 }
 
-
 /*FAQS AND TESTIMONIALS*/
 .faqs-testimonials-section {
   display: flex;
-  min-height: 65vh;
+  padding-bottom: 6rem;
   background: var(--grayish-blue);
 }
 .faqs-section {
@@ -523,9 +515,8 @@ nav li a:hover {
 }
 .faqs-section h2 {
   margin-left: 12rem;
-  margin: 4rem auto 3rem 12rem;;
+  margin: 4rem auto 3rem 12rem;
   font-size: 3rem;
-  
 }
 .testimonials-section {
   flex: 1 1 20rem;
@@ -547,47 +538,58 @@ nav li a:hover {
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-.accordion img {
-  width: 3%;
+
+.accordion::after{
+  content: '\002B';
+  font-size: 4rem;
   position: absolute;
-  top: 40%;
+  color:var(--theme-red);
+  top: 10%;
   left: 5%;
+  transition: transform 0.2s ease-in-out;
 }
 
-.accordion .title{
-  
-  margin-left:10%;
+.accordion.active:after{
+  transform: rotate(45deg);
+}
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.accordion.active + .accordion-body {
+  max-height: 1000px;
+}
+
+.accordion .title {
+  margin-left: 10%;
   text-align: left;
 }
 .accordion:hover {
   background-color: var(--theme-blue);
   color: white;
- 
 }
 
-.active{
+.active {
   background: var(--theme-blue);
-  color:white;
+  color: white;
 }
 
 .panel {
-  padding:2rem;
-  display: none;
+  padding: 2rem;
   background-color: var(--grayish-blue);
   overflow: hidden;
   width: 100%;
   margin-left: 12rem;
-  transition: all 0.5s ease-in;
+ 
 }
 .panel p {
   font-size: 1.7rem;
   font-weight: 400;
-  
 }
 
 .testimonials-section .blocks {
   /* background: var(--lighter-grayish); */
-  height: 45vh;
   margin: 4rem auto 5rem auto;
   display: flex;
   position: relative;
@@ -595,8 +597,8 @@ nav li a:hover {
 }
 
 .testimonials-section .card {
-  width: 70%;
-  height: 45vh;
+  width: 70%;  
+  padding-bottom:3rem;
   background: var(--lighter-grayish);
   margin: 0 auto 0 auto;
   border-radius: 2rem;
@@ -604,16 +606,17 @@ nav li a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
+ 
 }
 
-.testimonials-section .card:hover{
+.testimonials-section .card:hover {
   background: var(--theme-blue);
-  color:var(--grayish-blue);
+  color: var(--grayish-blue);
   cursor: pointer;
 }
 .testimonials-section h2 {
   font-size: 3rem;
-  width:68%;
+  width: 68%;
   margin: auto;
   padding: 3rem 0 1rem 0;
 }
@@ -640,7 +643,7 @@ nav li a:hover {
 }
 .testimonials-section h4 {
   font-size: 1.7rem;
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
 }
 .testimonials-section h5 {
   font-size: 1.2rem;
@@ -695,7 +698,6 @@ nav li a:hover {
 footer {
   display: flex;
   flex-direction: column;
- 
 }
 footer .main {
   background: var(--light-grayish);
@@ -703,11 +705,9 @@ footer .main {
   display: flex;
 }
 
-
 .grid1 {
   flex: 1 1 20rem;
   margin-left: 10rem;
- 
 }
 .grid1 h3,
 .grid2 h3 {
@@ -722,7 +722,7 @@ footer .main {
 }
 .grid1 ul {
   list-style: none;
-  padding:0 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 .grid1 ul li {
   margin: 1rem;

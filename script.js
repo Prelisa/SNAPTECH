@@ -4,13 +4,46 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-      panel.style.transition="all 0.5s ease-in-out"
-      
+    const panel = accordion.nextElementSibling;
+    if(panel.classList.contains('active')){
+      panel.style.maxHeight=panel.scrollHeight+'px';
+    }
+    else{
+      panel.style.maxHeight=0;
+    }
+  });
+}
+
+
+var careeracc = document.getElementsByClassName("accordion-career");
+var i;
+
+for (i = 0; i < careeracc.length; i++) {
+  careeracc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    const panel = careeracc.nextElementSibling;
+    if(panel.classList.contains('active')){
+      panel.style.maxHeight=panel.scrollHeight+'px';
+    }
+    else{
+      panel.style.maxHeight=0;
+    }
+  });
+}
+
+
+var productDetail = document.getElementsByClassName("product-detail");
+var i;
+
+for (i = 0; i < productDetail.length; i++) {
+  productDetail[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    const productItems = productDetail.nextElementSibling;
+    if(productItems.classList.contains('active')){
+      productItems.style.maxHeight=productItems.scrollHeight+'2rem';
+    }
+    else{ 
+      productItems.style.maxHeight=0;
     }
   });
 }

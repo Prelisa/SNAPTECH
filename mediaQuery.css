@@ -1,0 +1,150 @@
+/*Media Query*/
+@media only screen and (max-width: 1500px) {
+  .main-head nav {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+  }
+
+  .side-nav img {
+    width: 30px;
+    left: -25%;
+    top: 10%;
+  }
+
+  /*hero*/
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h2 {
+    font-size: 8rem;
+  }
+
+  .hero-text h4 {
+    font-size: 4rem;
+  }
+  .hero-text-button {
+    padding: 2rem 3rem;
+  }
+  .hero-text img {
+    width: 2%;
+  }
+
+  /*about*/
+  
+  .about-header {
+    padding-bottom:3rem;
+    align-items: flex-start;
+    padding-top: 3.4rem;
+  }
+  .about-header h1 {
+    font-size: 2.8rem;
+  }
+
+  /*SERVICES*/
+  .section-services h1 {
+    padding-top: 10rem;
+  }
+  .section-services {
+    padding-bottom: 20rem;
+  }
+
+  .section-services h1,
+  .section-why h2,
+  .section-blog h2 {
+    font-size: 3.2rem;
+  }
+
+  /*Why you should choose us*/
+  .section-why .block1,
+  .section-why .block2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  /*BLOGS*/
+  .section-blog .blocks {
+    width: 90%;
+    margin: auto;
+  }
+  .section-blog .box {
+    height: 50rem;
+  }
+
+  /*FAQs section*/
+  .faqs-testimonials-section {
+    min-height: 90vh;
+  }
+  .testimonials-section h2 {
+    font-size: 3rem;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 3rem 0 0rem 0;
+  }
+
+  .testimonials-section .card {
+    background: var(--lighter-grayish);
+    min-height: 60vh;
+    width: 70%;
+  }
+  .testimonials-section .card p {
+    padding: 2rem 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .side-nav img {
+    width: 30px;
+    left: -24%;
+    top: 15%;
+  }
+  nav a {
+    font-size: 1.6rem;
+  }
+  .section-wrapper {
+    padding-bottom:10rem;
+    background-color: var(--light-grayish);
+    position: relative;
+  }
+  .about-header h1{
+font-size: 2.3rem;
+
+  }
+  .about-header p{
+      font-size: 1.5rem;
+      padding-left: 4rem;
+  }
+  .highlights figcaption{
+      left:25%;
+  }
+.service-wrapper figcaption{
+    font-size: 1.2rem;
+    text-align:center;
+    width:95%;
+}
+.section-services{
+    padding-bottom:5rem;
+}
+  .section-services h1,
+  .section-why h2,
+  .section-blog h2 {
+    font-size: 3.2rem;
+  }
+  .section-blog .box {
+    height: 45rem;
+  }
+  .testimonials-section .card p {
+    padding: 1.5rem 3rem;
+  }
+.testimonials-section .quote-icon{
+    top:30%;
+    left:1.5%;
+}
+.grid1 h3,.grid2 h3, .grid3 h3{
+    font-size: 2.5rem;
+}
+.grid2 .contact-info {
+
+width:70%;
+}
+}
