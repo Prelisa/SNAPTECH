@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="./vendor/css/ionicons.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQuery.css">
     <title>SnapTech Technology</title>
@@ -26,8 +26,8 @@
                 <img src="./Assets/images/logo/SNAP-1.png" alt="">
             </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="main-nav ">
+                <li><a href="#" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
@@ -61,6 +61,10 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ion-navicon-round"></i>
+            </label>
 
             <div class="side-nav">
                 <h1>Have any Questions?</h1>
@@ -87,6 +91,7 @@
         <div class="hero-video">
             <video playsinline autoplay muted loop src="./Assets/videos/Pexels Videos 1851768.mp4"></video>
         </div>
+        <div class="overlay"></div>
     </section>
 
     <section id="about" class="section-about">
@@ -157,7 +162,7 @@
             <figure>
                 <a href="#">
                     <img src="/Assets/images/7.jpg" alt="">
-                    <figcaption>Business Telephon & Conferences</figcaption>
+                    <figcaption>Telephony & Conferences</figcaption>
                 </a>
             </figure>
             <figure>
@@ -344,7 +349,10 @@
 
                 <div class="card">
                     <img class="testimonial-image" src="./Assets/images/pexels-andrea-piacquadio-774909.jpg" alt="">
-                    <img class="quote-icon" src="./Assets/icons/left-quote.svg" alt="">
+                    <div class="quote">
+                        <img class="quote-icon" src="./Assets/icons/left-quote.svg" alt="">
+
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates odio necessitatibus natus
                         culpa enim sequi,m sequi, dolorem tempora voluptas officia assumenda nihil nam deserunt
                         lorem

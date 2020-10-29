@@ -63,13 +63,33 @@ nav ul {
   align-items: center;
   position: relative;
 }
+nav ul a{
+  transition:all 0.2 ease-in-out;
+  padding:1.6rem;
+}
+
+nav ul a.active, nav ul a:hover{
+  background:var(--lighter-grayish);
+  
+  color:black;
+}
+
+.checkbtn{
+  font-size: 3.5rem;
+  color:black;
+  cursor:pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 .logo {
   flex: 0 1 20rem;
 }
 
 .dropbtn {
   position: relative;
-  padding: 16px;
+  padding: 20px;
   font-size: 18px;
   border: none;
 }
@@ -126,11 +146,13 @@ nav li a:hover {
 .side-nav {
   position: relative;
   color: #000;
+  
+  width:20%;
 }
 .side-nav img {
   position: absolute;
   top: 0%;
-  left: -30%;
+  left: -15%;
   width: 40px;
 }
 .phone a:hover {
@@ -144,11 +166,12 @@ nav li a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  background: rgba(93, 97, 99, 0.685);
+  position: relative;
 }
 .hero-text {
   width: 90%;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .hero-text {
@@ -193,7 +216,18 @@ nav li a:hover {
 
 .hero-video video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.507);
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 @keyframes bounce {
@@ -241,11 +275,11 @@ nav li a:hover {
 }
 /*About Section*/
 .section-about {
- padding-bottom:10rem;
+  padding-bottom: 10rem;
   background: var(--grayish-blue);
 }
 .section-wrapper {
-  padding-bottom:20rem;
+  padding-bottom: 20rem;
   background-color: var(--light-grayish);
   position: relative;
 }
@@ -268,7 +302,7 @@ nav li a:hover {
 }
 
 .highlights {
-  width:80%;
+  width: 80%;
   display: flex;
   position: absolute;
   justify-content: space-evenly;
@@ -318,33 +352,34 @@ nav li a:hover {
 /*SECTION SERVICES*/
 .section-services {
   background: var(--grayish-blue);
-  padding-bottom: 20rem;
+  padding-top:7rem;
 }
 .section-services h1 {
   font-size: 4rem;
   /* font-family: "Roboto Condensed", sans-serif; */
   text-align: center;
-  padding: 10rem 0 4rem 0;
+  padding: 5rem 0 4rem 0;
 }
 
 .service-wrapper {
-  height: 60vh;
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 60%;
   margin: auto;
+  padding-bottom:10rem;
 }
 
 .service-wrapper figure {
   width: 25%;
   position: relative;
-  display: inline-block;
+ 
 }
 
 .service-wrapper figure img {
   width: 100%;
   height: auto;
   display: block;
+
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
   -webkit-transition: -webkit-transform 0.5s;
@@ -372,6 +407,7 @@ nav li a:hover {
   width: 90%;
   text-align: center;
   transition: font-size 0.2s;
+  z-index: 1;
 }
 
 .service-wrapper figcaption:hover {
@@ -452,6 +488,7 @@ nav li a:hover {
 .section-blog .blocks {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .section-blog .box {
   width: 50rem;
@@ -459,11 +496,11 @@ nav li a:hover {
   border-radius: 2rem;
   margin: 1.5rem 1.5rem 8rem 1.5rem;
   background: var(--grayish-blue);
-  display: flex;
   transform: scale(1);
   transition: transform 0.3s;
   text-align: center;
   transition: all 0.5s ease-in-out;
+  padding-bottom:2rem;
 }
 
 .section-blog .box:hover {
@@ -539,17 +576,17 @@ nav li a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-.accordion::after{
-  content: '\002B';
+.accordion::after {
+  content: "\002B";
   font-size: 4rem;
   position: absolute;
-  color:var(--theme-red);
+  color: var(--theme-red);
   top: 10%;
   left: 5%;
   transition: transform 0.2s ease-in-out;
 }
 
-.accordion.active:after{
+.accordion.active:after {
   transform: rotate(45deg);
 }
 .accordion-body {
@@ -581,7 +618,6 @@ nav li a:hover {
   overflow: hidden;
   width: 100%;
   margin-left: 12rem;
- 
 }
 .panel p {
   font-size: 1.7rem;
@@ -597,8 +633,8 @@ nav li a:hover {
 }
 
 .testimonials-section .card {
-  width: 70%;  
-  padding-bottom:3rem;
+  width: 70%;
+  padding-bottom: 3rem;
   background: var(--lighter-grayish);
   margin: 0 auto 0 auto;
   border-radius: 2rem;
@@ -606,7 +642,6 @@ nav li a:hover {
   flex-direction: column;
   align-items: center;
   position: relative;
- 
 }
 
 .testimonials-section .card:hover {
@@ -628,19 +663,20 @@ nav li a:hover {
   font-weight: 400;
 }
 .testimonial-image {
-  width: 15%;
+  width: 20%;
   border-radius: 2rem;
   padding: 1rem 0 1rem 0;
 }
 
-.quote-icon {
-  width: 7%;
-  padding: 0.5rem;
-  margin-bottom: 0;
-  position: absolute;
-  top: 35%;
-  left: 3%;
+.quote{
+ 
+  width:100%;
 }
+.quote-icon{
+  width:5%;
+  margin-left:5%;
+}
+
 .testimonials-section h4 {
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
@@ -682,6 +718,7 @@ nav li a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 .brands-section h2 {
   font-size: 3rem;
@@ -690,7 +727,6 @@ nav li a:hover {
 }
 .brand-wrapper img {
   width: 8%;
-
   margin-bottom: 5rem;
 }
 
@@ -706,8 +742,8 @@ footer .main {
 }
 
 .grid1 {
-  flex: 1 1 20rem;
-  margin-left: 10rem;
+  flex: 1 1 25rem;
+  margin-left: 2rem;
 }
 .grid1 h3,
 .grid2 h3 {
@@ -734,7 +770,7 @@ footer ul li a {
   color: var(--theme-red);
 }
 .grid2 {
-  flex: 1 1 20rem;
+  flex: 1 1 30rem;
   margin-left: 3.5rem;
 }
 .grid2 h3 {
@@ -763,6 +799,7 @@ footer ul li a {
 
 .grid3 {
   flex: 1 1 20rem;
+  margin-right: 10rem;
 }
 
 footer .small {
@@ -778,15 +815,26 @@ footer .small p {
   color: black;
 }
 
+.social-media-links{
+
+  width:100%;
+}
 .social-media-links ul {
   list-style: none;
   display: flex;
+  width:90%;
+margin-bottom: 2rem;
+  justify-content: flex-start;
+  
 }
 
-.social-media-links ul li {
-  width: 15%;
+.social-media-links ul li{
+ 
+  width:30%;
+  
 }
-.social-media-links ul a img {
-  width: 5rem;
-  margin-bottom: 2rem;
+
+.social-media-links ul li a img{
+  width:35%;
+  
 }
