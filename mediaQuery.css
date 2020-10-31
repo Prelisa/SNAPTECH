@@ -108,7 +108,7 @@
 @media only screen and (max-width: 1300px) {
   .side-nav img {
     width: 30px;
-    left: -24%;
+    left: -15%;
     top: 15%;
   }
   nav a {
@@ -180,7 +180,7 @@
   nav ul {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: var(--lighter-grayish);
     top: 9.3rem;
     left: -100%;
@@ -191,8 +191,8 @@
     z-index: 3;
   }
 
-  #check:checked ul {
-    left: 0;
+  #check:checked ~ ul {
+    left: 300px;
   }
 
   .hero-text h2 {
@@ -307,13 +307,31 @@
   .faqs-testimonials-section {
     display: flex;
     flex-direction: column;
+    height: 270vh;
   }
-
+  .testimonials-section {
+    margin-top: -5rem;
+  }
   .testimonials-section h2 {
     text-align: center;
+    width: 100%;
+
+    margin: 0;
   }
+  .testimonials-section .blocks {
+    width: 100%;
+    left: 15%;
+  }
+  .faqs-section .panel {
+    width: 90%;
+    margin: auto;
+  }
+
   .faqs-section h2 {
     text-align: center;
+
+    margin: 2rem 0;
+    width: 100%;
   }
   .faqs-section {
     width: 90%;
@@ -330,6 +348,85 @@
   }
   .section-blog {
     padding-bottom: 5rem;
+  }
+  .fb-page {
+    margin-bottom: 3rem;
+  }
+  footer .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .main .grid2 {
+    text-align: center;
+  }
+  footer .main .grid2 .contact-footer {
+    width: 100%;
+  }
+  footer .main .grid2 .contact-info {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .main h3 {
+    width: 100%;
+    background: var(--grayish-blue);
+    margin: 0;
+  }
+
+  footer .main .grid1,
+  footer .main .grid2,
+  footer .main .grid3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  footer .main .grid2 .contact-info:nth-child(4) {
+    margin-left: 1rem;
+  }
+  footer .main .grid2 .contact-info img {
+    width: 5%;
+  }
+  footer .main .grid1,
+  footer .main .grid3 {
+    text-align: center;
+  }
+  footer .main p,
+  footer .main .grid1 li a {
+    font-size: 1.8rem;
+  }
+  footer .main .contact-footer .footer-logo {
+    margin: 0;
+  }
+  .social-media-links ul li a img {
+    width: 30%;
+  }
+
+  .social-media-links ul {
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+  }
+
+  .career-page .career-block {
+    width: 90%;
+    margin: auto;
+  }
+  /* .career-page .title h1{
+    font-size:1.4rem;
+  }
+  .career-page .title h4{
+    font-size: 1.4rem;
+  } */
+  .career-page .title img{
+    width:15%;
+  }
+  .accordion-career{
+    font-size: 1.4rem;
   }
 }
 
@@ -349,11 +446,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-   
+
     align-items: center;
   }
   .section-about .highlights figure {
-    
     width: 60%;
   }
   .section-about .highlights figure img {
@@ -364,7 +460,7 @@
     top: 80%;
     left: 35%;
     padding: 2rem 3rem;
-    background: var(--grayish-blue)
+    background: var(--grayish-blue);
   }
 
   .about-header {
@@ -372,8 +468,7 @@
     flex-direction: column;
   }
   .about-header h1 {
-  
-    width:100%;
+    width: 100%;
     text-align: center;
   }
   .about-header p {
@@ -429,16 +524,67 @@
     padding-bottom: 5rem;
   }
   .fb-page {
-    display: none;
+    margin-bottom: 3rem;
+  }
+  footer .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .main .grid2 {
+    text-align: center;
+  }
+  footer .main .grid2 .contact-footer {
+    width: 100%;
+  }
+  footer .main .grid2 .contact-info {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .main h3 {
+    width: 100%;
+    background: var(--grayish-blue);
+    margin: 0;
+  }
+
+  footer .main .grid1,
+  footer .main .grid2,
+  footer .main .grid3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  footer .main .grid2 .contact-info:nth-child(4) {
+    margin-left: 1rem;
+  }
+  footer .main .grid2 .contact-info img {
+    width: 5%;
+  }
+  footer .main .grid1,
+  footer .main .grid3 {
+    text-align: center;
+  }
+  footer .main p,
+  footer .main .grid1 li a {
+    font-size: 1.8rem;
+  }
+  footer .main .contact-footer .footer-logo {
+    margin: 0;
   }
   .social-media-links ul li a img {
-    width: 100%;
+    width: 30%;
   }
 
   .social-media-links ul {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
   }
+
+
 }
 @media only screen and (max-width: 555px) {
   .section-blog .box {
@@ -448,9 +594,12 @@
     top: 80%;
     left: 30%;
     padding: 1rem 3rem;
-    background: var(--grayish-blue)
+    background: var(--grayish-blue);
   }
-  .side-nav{
+  .side-nav {
     display: none;
   }
+}
+
+@media only screen and (max-width: 467px) {
 }

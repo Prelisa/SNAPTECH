@@ -18,6 +18,8 @@ html {
 html,
 body {
   font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
+ 
 }
 h1 {
   font-size: 1.5rem;
@@ -63,24 +65,25 @@ nav ul {
   align-items: center;
   position: relative;
 }
-nav ul a{
-  transition:all 0.2 ease-in-out;
-  padding:1.6rem;
+nav ul a {
+  transition: all 0.2 ease-in-out;
+  padding: 1.6rem;
 }
 
-nav ul a.active, nav ul a:hover{
-  background:var(--lighter-grayish);
-  
-  color:black;
+nav ul a.active,
+nav ul a:hover {
+  background: var(--lighter-grayish);
+
+  color: black;
 }
 
-.checkbtn{
+.checkbtn {
   font-size: 3.5rem;
-  color:black;
-  cursor:pointer;
+  color: black;
+  cursor: pointer;
   display: none;
 }
-#check{
+#check {
   display: none;
 }
 .logo {
@@ -90,7 +93,7 @@ nav ul a.active, nav ul a:hover{
 .dropbtn {
   position: relative;
   padding: 20px;
-  font-size: 18px;
+  
   border: none;
 }
 
@@ -146,8 +149,8 @@ nav li a:hover {
 .side-nav {
   position: relative;
   color: #000;
-  
-  width:20%;
+
+  width: 20%;
 }
 .side-nav img {
   position: absolute;
@@ -352,7 +355,7 @@ nav li a:hover {
 /*SECTION SERVICES*/
 .section-services {
   background: var(--grayish-blue);
-  padding-top:7rem;
+  padding-top: 7rem;
 }
 .section-services h1 {
   font-size: 4rem;
@@ -366,13 +369,12 @@ nav li a:hover {
   flex-wrap: wrap;
   width: 60%;
   margin: auto;
-  padding-bottom:10rem;
+  padding-bottom: 10rem;
 }
 
 .service-wrapper figure {
   width: 25%;
   position: relative;
- 
 }
 
 .service-wrapper figure img {
@@ -479,6 +481,10 @@ nav li a:hover {
 /*Section Blogs*/
 .section-blog {
   background: var(--lighter-grayish);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section-blog h2 {
   font-size: 4rem;
@@ -500,7 +506,7 @@ nav li a:hover {
   transition: transform 0.3s;
   text-align: center;
   transition: all 0.5s ease-in-out;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
 .section-blog .box:hover {
@@ -541,6 +547,21 @@ nav li a:hover {
   margin: 1rem auto;
 }
 
+.section-blog button{
+  padding: 2rem 3rem;
+  border:none;
+  margin-bottom: 4rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  background: var(--grayish-blue);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.section-blog button:hover{
+  background: var(--theme-blue);
+  color:white;
+}
+
 /*FAQS AND TESTIMONIALS*/
 .faqs-testimonials-section {
   display: flex;
@@ -548,7 +569,8 @@ nav li a:hover {
   background: var(--grayish-blue);
 }
 .faqs-section {
-  flex: 1 1 20rem;
+width:50%;
+  
 }
 .faqs-section h2 {
   margin-left: 12rem;
@@ -556,8 +578,8 @@ nav li a:hover {
   font-size: 3rem;
 }
 .testimonials-section {
-  flex: 1 1 20rem;
   background: var(--grayish-blue);
+  width:50%;
 }
 
 .accordion {
@@ -624,25 +646,31 @@ nav li a:hover {
   font-weight: 400;
 }
 
-.testimonials-section .blocks {
-  /* background: var(--lighter-grayish); */
-  margin: 4rem auto 5rem auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
+.for_slick_slider{
+  display:flex;
+ margin-left:4rem;
 }
+ .for_slick_slider .items{
+   width:700px;
+   height:450px;
+   margin:50px;
+ }
+
 
 .testimonials-section .card {
-  width: 70%;
+  width: 700px;
+  height:450px;
   padding-bottom: 3rem;
   background: var(--lighter-grayish);
-  margin: 0 auto 0 auto;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
+
+
+
 
 .testimonials-section .card:hover {
   background: var(--theme-blue);
@@ -659,7 +687,6 @@ nav li a:hover {
 .testimonials-section .card p {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
-  text-align: center;
   font-weight: 400;
 }
 .testimonial-image {
@@ -668,13 +695,12 @@ nav li a:hover {
   padding: 1rem 0 1rem 0;
 }
 
-.quote{
- 
-  width:100%;
+.quote {
+  width: 100%;
 }
-.quote-icon{
-  width:5%;
-  margin-left:5%;
+.quote-icon {
+  width: 5%;
+  margin-left: 5%;
 }
 
 .testimonials-section h4 {
@@ -683,7 +709,7 @@ nav li a:hover {
 }
 .testimonials-section h5 {
   font-size: 1.2rem;
-
+text-align: center;
   font-style: italic;
 }
 
@@ -714,26 +740,77 @@ nav li a:hover {
 .brands-section {
   background: var(--lighter-grayish);
 }
-.brand-wrapper {
+/* .brand-wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
   flex-wrap: wrap;
+} */
+#slider {
+  overflow: hidden;
 }
+#slider figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 5rem;
+  /* animation: 5s slider infinite; */
+}
+
+#slider figure img {
+  width: 10%;
+  float: left;
+}
+
 .brands-section h2 {
   font-size: 3rem;
   text-align: center;
   padding: 3rem;
 }
-.brand-wrapper img {
+/* .brand-wrapper img {
   width: 8%;
   margin-bottom: 5rem;
+} */
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 /*FOOTER*/
 footer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 footer .main {
   background: var(--light-grayish);
@@ -815,26 +892,21 @@ footer .small p {
   color: black;
 }
 
-.social-media-links{
-
-  width:100%;
+.social-media-links {
+  width: 100%;
 }
 .social-media-links ul {
   list-style: none;
   display: flex;
-  width:90%;
-margin-bottom: 2rem;
+  width: 90%;
+  margin-bottom: 2rem;
   justify-content: flex-start;
-  
 }
 
-.social-media-links ul li{
- 
-  width:30%;
-  
+.social-media-links ul li {
+  width: 30%;
 }
 
-.social-media-links ul li a img{
-  width:35%;
-  
+.social-media-links ul li a img {
+  width: 35%;
 }
