@@ -1,6 +1,9 @@
 .portfolio-page {
   width: 100%;
-  height: 105vh;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .portfolio-page h2 {
