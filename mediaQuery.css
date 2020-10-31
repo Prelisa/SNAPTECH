@@ -201,8 +201,8 @@
     z-index: 3;
   }
 
-  #check:checked ~ ul {
-    left: 300px;
+  #check:checked ~  ul {
+    left: 0;
   }
 
   .hero-text h2 {
