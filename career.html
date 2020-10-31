@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="./vendor/css/ionicons.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaQuery.css">
     <link rel="stylesheet" href="./career.css">
@@ -28,8 +28,8 @@
                 <img src="./Assets/images/logo/SNAP-1.png" alt="">
             </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="main-nav ">
+                <li><a href="#" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
@@ -45,10 +45,28 @@
 
                 </li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">IT Services</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Services
+                            <img src="./Assets/icons/company-expand.svg" alt="">
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">CCTV</a>
+                            <a href="#">Laptops</a>
+                            <a href="#">Routers</a>
+                            <a href="#">Microphone</a>
+
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ion-navicon-round"></i>
+            </label>
 
             <div class="side-nav">
                 <h1>Have any Questions?</h1>
@@ -59,7 +77,6 @@
         </nav>
 
     </header>
-
 
 
     <section class="career-page">
@@ -93,6 +110,44 @@
                             architecto ipsum eius quae fugit dignissimos magni nostrum. Deserunt eveniet commodi iure
                             odio,
                             culpa eius enim.</p>
+
+
+                        <button>Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-career animate__animated animate__slideInLeft">
+
+                    <div class="title">
+                        <h1>Senior Developer</h1>
+                        <h4>1 position</h4>
+                        <div class="location">
+                            <img src="./Assets/icons/pin-career.svg" alt="">
+                            <h4>Kathmandu</h4>
+                        </div>
+                        <h5>Open</h5>
+
+                    </div>
+
+
+                </button>
+                <div class="accordion-body">
+                    <div class="panel-career">
+                        <h3>Job Description</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, iusto maiores eius
+                            ut
+                            deleniti eaque reiciendis earum voluptates saepe in. Error ut repudiandae architecto iusto
+                            earum
+                            facilis nisi eaque quaerat.</p>
+
+                        <h3>Facilities</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates, tempore ad quidem
+                            vitae
+                            architecto ipsum eius quae fugit dignissimos magni nostrum. Deserunt eveniet commodi iure
+                            odio,
+                            culpa eius enim.</p>
+                        <button>Apply</button>
                     </div>
                 </div>
             </div>
@@ -126,39 +181,7 @@
                             architecto ipsum eius quae fugit dignissimos magni nostrum. Deserunt eveniet commodi iure
                             odio,
                             culpa eius enim.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button class="accordion-career animate__animated animate__slideInLeft">
-
-                    <div class="title">
-                        <h1>Senior Developer</h1>
-                        <h4>1 position</h4>
-                        <div class="location">
-                            <img src="./Assets/icons/pin-career.svg" alt="">
-                            <h4>Kathmandu</h4>
-                        </div>
-                        <h5>Open</h5>
-                    </div>
-
-
-                </button>
-                <div class="accordion-body">
-                    <div class="panel-career">
-                        <h3>Job Description</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, iusto maiores eius
-                            ut
-                            deleniti eaque reiciendis earum voluptates saepe in. Error ut repudiandae architecto iusto
-                            earum
-                            facilis nisi eaque quaerat.</p>
-
-                        <h3>Facilities</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates, tempore ad quidem
-                            vitae
-                            architecto ipsum eius quae fugit dignissimos magni nostrum. Deserunt eveniet commodi iure
-                            odio,
-                            culpa eius enim.</p>
+                        <button>Apply</button>
                     </div>
                 </div>
             </div>
@@ -192,6 +215,7 @@
                             architecto ipsum eius quae fugit dignissimos magni nostrum. Deserunt eveniet commodi iure
                             odio,
                             culpa eius enim.</p>
+                        <button>Apply</button>
                     </div>
                 </div>
             </div>

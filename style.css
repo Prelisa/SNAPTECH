@@ -149,7 +149,7 @@ nav li a:hover {
 .side-nav {
   position: relative;
   color: #000;
-
+text-align: center;
   width: 20%;
 }
 .side-nav img {
@@ -742,18 +742,18 @@ text-align: center;
 }
 .brand-wrapper {
   display: flex;
-  width:80%;
+  width:90%;
   margin:auto;
 }
 
 .brand-wrapper .items{
-  width:200px;
-  height:150px;
-  margin:50px;
+  width:20%;
+  margin:1rem;
 }
 .brand-wrapper .items img{
-  width:200px;
-  height:150px;
+  width:50%;
+  height:auto;
+  margin:5rem;
 }
 .brands-section h2 {
   font-size: 3rem;

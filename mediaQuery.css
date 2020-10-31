@@ -7,7 +7,7 @@
 
   .side-nav img {
     width: 30px;
-    left: -25%;
+    left: 2%;
     top: 10%;
   }
 
@@ -107,8 +107,8 @@
 
 @media only screen and (max-width: 1300px) {
   .side-nav img {
-    width: 30px;
-    left: -15%;
+    width: 25px;
+   
     top: 15%;
   }
   nav a {
@@ -176,7 +176,10 @@
     align-items: flex-end;
     margin-right: 8rem;
   }
-
+  .side-nav img {
+   
+    left:-5%;
+  }
   nav ul {
     position: fixed;
     width: 100%;
@@ -239,12 +242,18 @@
   footer .main .grid2 .contact-footer {
     width: 150%;
   }
+  .career-page h2 {
+    padding-bottom: 3rem;
+  }
 }
 
 /*TABLETS AND IPADS SCREEN SIZE 768PX YO 1023PX*/
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 18px;
+  }
+  .side-nav img {
+    left: -12%;
   }
   .highlights {
     top: 65%;
@@ -308,6 +317,7 @@
 
   .side-nav img {
     width: 2.3rem;
+    left: -10%;
   }
   .highlights {
     top: 70%;
@@ -423,6 +433,7 @@
   .career-page .career-block {
     width: 90%;
     margin: auto;
+    padding-bottom: 5rem;
   }
   /* .career-page .title h1{
     font-size:1.4rem;
@@ -433,6 +444,10 @@
   .career-page .title img {
     width: 15%;
   }
+
+  .career-page h2 {
+    padding: 8rem 2rem 4rem 2rem;
+  }
   .accordion-career {
     font-size: 1.4rem;
   }
@@ -441,6 +456,9 @@
 @media only screen and (max-width: 850px) {
   .highlights figcaption {
     left: 18%;
+  }
+  .side-nav img{
+    left:-12%;
   }
 
   .section-why .blocks {
@@ -488,11 +506,9 @@
 
 @media only screen and (max-width: 767px) {
   .side-nav {
-    width: 30%;
+    display: none;
   }
-  .side-nav img {
-    left: -18%;
-  }
+
   .section-why .blocks .block1,
   .section-why .blocks .block2 {
     display: flex;
@@ -590,6 +606,12 @@
     height: 20vh;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .career-page .career-block .title .location {
+    display: none;
   }
 }
 @media only screen and (max-width: 555px) {

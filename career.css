@@ -28,7 +28,7 @@
       font-size: 4rem;
       position: absolute;
       color:var(--theme-red);
-      top: 25%;
+      top: 7%;
       right: 5%;
       transition: transform 0.2s ease-in-out;
   }
@@ -76,7 +76,7 @@
   .career-page h2{
       font-size: 4rem;
       text-align: center;
-      padding:8rem 2rem 8rem 2rem;
+      padding: 8rem 2rem 4rem 2rem;
   }
 
   .accordion-career .title{
@@ -105,11 +105,24 @@
       position: absolute;
       left:-25%;
       width:20%;
-      top:-5%;
+      top:0%;
       
   }
   .career-page .title .location{
       position: relative;
   }
 
-  
+  .career-page .panel-career button{
+      padding:1rem 2rem;
+      border:none;
+      margin:2rem 1rem;
+      background: var(--theme-blue);
+      color:white;
+      transition: all 0.2s ease-in-out;
+      border-radius: 0.5rem;
+  }
+
+  .career-page .panel-career button:hover{
+      background: var(--theme-red);
+      cursor: pointer;
+  }
