@@ -39,6 +39,7 @@
 .side-bar .card a,
 .side-bar .card p,.side-bar .card label {
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .side-bar .hoverable:hover{

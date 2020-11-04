@@ -40,9 +40,10 @@ a {
   min-height: 12vh;
   display: flex;
   background: var(--grayish-blue);
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 .logo img {
   width: 100%;
@@ -147,19 +148,20 @@ nav li a:hover {
   color: #c04039;
 }
 .side-nav {
-  position: relative;
-  color: #000;
-text-align: center;
-  width: 20%;
+ display: flex;
+ justify-content: space-evenly;
+ width:15%;
 }
-.side-nav img {
-  position: absolute;
-  top: 0%;
-  left: 6%;
-  width: 40px;
+.side-nav i {
+ font-size:5rem;
+ color:var(--theme-red);
+ 
 }
-.phone a:hover {
-  color: #282f63;
+.side-nav .texts h1{
+  font-size: 1.8rem;
+}
+.side-nav .texts a:hover {
+  color: var(--theme-red)
 }
 
 /*HERO SECTION*/
@@ -212,15 +214,15 @@ text-align: center;
 }
 .hero-video {
   position: absolute;
-  top: 0;
+  top: 14%;
   left: 0;
   z-index: -1;
 }
 
 .hero-video video {
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
 }
 
 .overlay {
@@ -228,7 +230,7 @@ text-align: center;
   height: 100vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.507);
-  top: 0;
+  top:0;
   left: 0;
   z-index: 1;
 }
@@ -289,19 +291,15 @@ text-align: center;
 .about-header {
   width: 90%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  
   align-items: center;
-  min-height: 20vh;
+  min-height: 15vh;
   color: black;
 }
 .about-header h1 {
   font-size: 3rem;
-  flex: 1 1 5rem;
-}
-.about-header p {
-  font-size: 1.8rem;
-  flex: 1 1 40rem;
+text-align: center;
+padding-top:3rem;
 }
 
 .highlights {
@@ -573,8 +571,8 @@ width:50%;
   
 }
 .faqs-section h2 {
-  margin-left: 12rem;
-  margin: 4rem auto 3rem 12rem;
+ 
+  margin: 4rem auto 3rem 17rem;
   font-size: 3rem;
 }
 .testimonials-section {
@@ -582,6 +580,10 @@ width:50%;
   width:50%;
 }
 
+.faqs-section .accordion-item{
+  width:90%;
+  margin:auto;
+}
 .accordion {
   background-color: var(--lighter-grayish);
   color: black;
@@ -660,7 +662,7 @@ width:50%;
 .testimonials-section .card {
   width: 700px;
   height:450px;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   background: var(--lighter-grayish);
   border-radius: 2rem;
   display: flex;
@@ -686,13 +688,14 @@ width:50%;
 
 .testimonials-section .card p {
   font-size: 1.6rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   font-weight: 400;
 }
 .testimonial-image {
   width: 20%;
   border-radius: 2rem;
   padding: 1rem 0 1rem 0;
+  margin-top:3rem;
 }
 
 .quote {
@@ -738,6 +741,7 @@ text-align: center;
 
 /*BRANDS */
 .brands-section {
+ 
   background: var(--lighter-grayish);
 }
 .brand-wrapper {
@@ -745,7 +749,11 @@ text-align: center;
   width:90%;
   margin:auto;
 }
-
+.brands-section .content-wrapper{
+  display:flex;
+  width:90%;
+  margin:auto;
+}
 .brand-wrapper .items{
   width:20%;
   margin:1rem;
@@ -759,6 +767,21 @@ text-align: center;
   font-size: 3rem;
   text-align: center;
   padding: 3rem;
+}
+
+.brands-section .previous, .brands-section .next{
+  color:var(--theme-red);
+  font-size: 15rem;
+  border:none;
+  height: 5%;
+  margin:auto;
+  background: transparent;
+  outline:none;
+}
+
+.brands-section .previous:hover, .brands-section .next:hover{
+  color:var(--theme-blue);
+  cursor: pointer;
 }
 
 
@@ -842,9 +865,16 @@ footer ul li a {
 .grid2 .contact-info {
   width: 60%;
 }
-.grid2 .contact-info img {
-  width: 10%;
-  margin-right: 2rem;
+.grid2 .contact-info i {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  color: var(--theme-blue);
+  transition: all 0.2s ease-in-out;
+ 
+}
+
+.grid2 .contact-info i:hover{
+  color: var(--theme-red);
 }
 .grid2 .footer-logo {
   width: 20%;
@@ -883,16 +913,25 @@ footer .small p {
 }
 .social-media-links ul {
   list-style: none;
-  display: flex;
+display: flex;
   width: 90%;
   margin-bottom: 2rem;
-  justify-content: flex-start;
+
 }
 
 .social-media-links ul li {
   width: 30%;
+
+}
+.social-media-links ul li i{
+  color: white;
+  font-size: 5rem;
+}
+.social-media-links ul li :nth-child(1):hover{
+  color:blue;
+}
+.social-media-links ul li :nth-child(2):hover{
+  color:black;
 }
 
-.social-media-links ul li a img {
-  width: 35%;
-}
+

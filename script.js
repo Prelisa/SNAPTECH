@@ -64,11 +64,31 @@ $(function ()  {
 
 $(function ()  {
   $('.multiple-images').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows:false,
+    infinite:true,
+    
+  });
+});
+
+$(function ()  {
+  $('.multiple-items-team').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows:false,
     infinite:true
   });
 });
+
+$('.previous').click(function(){
+  $('.multiple-images').slick('slickPrev');
+ 
+})
+$('.next').click(function(){
+  $('.multiple-images').slick('slickNext');
+})
