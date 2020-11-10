@@ -64,12 +64,42 @@ $(function ()  {
 
 $(function ()  {
   $('.multiple-images').slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     arrows:false,
     infinite:true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint:750,
+        settings:{
+          slidesToShow:2,
+          slidesToScroll:1
+        }
+      },
+      {
+        breakpoint:555,
+        settings:{
+          slidesToShow:2,
+          slidesToScroll:1
+        }
+      }
+    ]
     
   });
 });
@@ -97,7 +127,9 @@ $('.owl-carousel').owlCarousel({
   loop:true,
   autoplay:true,
   autoplaySpeed:3000,
-  nav:true,
+  nav:false,
+  dots:true,
+  // autoplayHoverPause: true,
   responsive:{
       0:{
           items:1
@@ -110,3 +142,50 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+// Listen to owl events:
+owl.on('changed.owl.carousel', function(event) {
+  var currentItem = event.item.index;
+  window.location.hash = currentItem + 1;  
+  // console.log(currentItem);  
+  if(currentItem.toString() == '2'){
+    $("#Sbtn2").addClass("active");
+    $("#Sbtn3").removeClass("active");
+    $("#Sbtn4").removeClass("active");
+  }
+  else if(currentItem.toString() == '3'){
+    $("#Sbtn3").addClass("active");
+    $("#Sbtn2").removeClass("active");
+    $("#Sbtn4").removeClass("active");
+  }
+  else if(currentItem.toString() == '4'){
+    $("#Sbtn4").addClass("active");
+    $("#Sbtn3").removeClass("active");
+    $("#Sbtn2").removeClass("active");
+  }
+})
+
+
+$(document).ready(function() {
+  $(".Sbtn1").click(function(){
+    owl.trigger('to.owl.carousel', [2, 1000]);
+    $("#Sbtn2").addClass("active");
+    $("#Sbtn3").removeClass("active");
+    $("#Sbtn4").removeClass("active");
+   
+  }); 
+  $(".Sbtn2").click(function(){
+    owl.trigger('to.owl.carousel', [3, 1000]);
+    $("#Sbtn3").addClass("active");
+    $("#Sbtn2").removeClass("active");
+    $("#Sbtn4").removeClass("active");
+  }); 
+  $(".Sbtn3").click(function(){
+    owl.trigger('to.owl.carousel', [4,1000]);
+    $("#Sbtn4").addClass("active");
+    $("#Sbtn3").removeClass("active");
+    $("#Sbtn2").removeClass("active");
+  }); 
+});

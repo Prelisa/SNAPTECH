@@ -1,8 +1,17 @@
 /*Media Query*/
-@media only screen and (max-width:1635px){
-  .side-nav img{
-    left:-1%;
+@media only screen and (max-width: 1635px) {
+  .side-nav img {
+    left: -1%;
   }
+  .section-blog .blocks {
+    width: 90%;
+    margin: auto;
+  }
+  section-blog p {
+    
+    font-weight: 400;
+    margin: 1rem auto;
+}
 }
 @media only screen and (max-width: 1500px) {
   .main-head nav {
@@ -10,12 +19,9 @@
     padding: 0.5rem 2rem 0.5rem 1rem;
   }
 
-  .side-nav img {
-    width: 30px;
-    left: 2%;
-    top: 10%;
+  .main-head .side-nav i {
+    font-size: 4rem;
   }
-
   /*hero*/
   .hero-text {
     width: 90%;
@@ -30,9 +36,6 @@
   }
   .hero-text-button {
     padding: 2rem 3rem;
-  }
-  .hero-text img {
-    width: 2%;
   }
 
   /*about*/
@@ -108,14 +111,12 @@
   .testimonials-section .card p {
     padding: 2rem 2.4rem;
   }
-
-  .portfolio-page 
 }
 
 @media only screen and (max-width: 1300px) {
   .side-nav img {
     width: 25px;
-   
+
     top: 15%;
   }
   nav a {
@@ -184,15 +185,14 @@
     margin-right: 8rem;
   }
   .side-nav img {
-   
-    left:-5%;
+    left: -5%;
   }
   nav ul {
     position: fixed;
     width: 100%;
     height: 90vh;
     background: var(--lighter-grayish);
-    top: 9.3rem;
+    top: 7rem;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
@@ -201,7 +201,7 @@
     z-index: 3;
   }
 
-  #check:checked ~  ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -211,7 +211,7 @@
   .hero-text h4 {
     font-size: 3rem;
   }
-  .hero-text button {
+  .hero-text .learnmorebtn {
     font-size: 1.8rem;
     padding: 1.5rem;
   }
@@ -259,8 +259,13 @@
   body {
     font-size: 18px;
   }
-  .side-nav img {
-    left: -12%;
+
+  .side-nav {
+    width: 23%;
+  }
+  .section-hero {
+    height: 60vh;
+    margin-top: 8vh;
   }
   .highlights {
     top: 65%;
@@ -300,17 +305,43 @@
     align-items: center;
     justify-content: center;
   }
+  .faqs-section {
+    width: 90%;
+  }
+  .testimonials-section {
+    width: 90%;
+    margin-left: 0rem;
+  }
+  .testimonials-section .card {
+    width: 90%;
+    margin: 2rem 0;
+  }
   .faqs-testimonials-section h2 {
     font-size: 2.8rem;
-    margin-left: 5rem;
+    text-align: center;
   }
 
   .faqs-section .accordion {
     font-size: 1.6rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
+    width: 95%;
   }
   .testimonials-section .for_slick_slider .items {
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .section-hero .hero-text .buttonslider {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  .section-hero .hero-text{
+    padding-bottom: 10rem;
+  }
+  .section-hero .hero-text img{
+    display: none;
   }
 }
 
@@ -322,31 +353,29 @@
     font-size: 1.3rem;
   }
 
-  .side-nav img {
-    width: 2.3rem;
-    left: -10%;
+  .side-nav {
+    width: 25%;
   }
+
   .highlights {
     top: 70%;
   }
   .faqs-testimonials-section {
     display: flex;
     flex-direction: column;
-    height: 270vh;
+    padding: 2rem;
   }
-  .testimonials-section {
-    margin-top: -5rem;
-  }
+
   .testimonials-section h2 {
     text-align: center;
     width: 100%;
-
     margin: 0;
   }
-  .testimonials-section .blocks {
+  .testimonials-section .for_slick_slider .items {
     width: 100%;
-    left: 15%;
+    margin: 0;
   }
+
   .faqs-section .panel {
     width: 90%;
     margin: auto;
@@ -362,6 +391,7 @@
     width: 90%;
     margin: auto;
   }
+
   .section-blog .blocks {
     display: flex;
     flex-direction: column;
@@ -373,6 +403,20 @@
   }
   .section-blog {
     padding-bottom: 5rem;
+  }
+  .brands-section h2 {
+    font-size: 2rem;
+  }
+  .brands-section .previous,
+  .brands-section .next {
+    font-size: 9rem;
+  }
+  .brands-section .brand-wrapper .items {
+    height: 20%;
+  }
+  .brands-section .brand-wrapper .items img {
+    width: 50%;
+    height: 10vh;
   }
   .fb-page {
     margin-bottom: 3rem;
@@ -395,8 +439,11 @@
   }
   footer .main h3 {
     width: 100%;
-    background: var(--grayish-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--theme-blue);
     margin: 0;
+    font-size: 2.5rem;
+    text-underline-position: below;
   }
 
   footer .main .grid1,
@@ -442,12 +489,7 @@
     margin: auto;
     padding-bottom: 5rem;
   }
-  /* .career-page .title h1{
-    font-size:1.4rem;
-  }
-  .career-page .title h4{
-    font-size: 1.4rem;
-  } */
+
   .career-page .title img {
     width: 15%;
   }
@@ -458,14 +500,25 @@
   .accordion-career {
     font-size: 1.4rem;
   }
+
+  .brands-section .brand-wrapper .items {
+    width: 25%;
+    margin: 0 auto;
+  }
+  .brands-section .brand-wrapper .items img {
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    margin-left: 0rem;
+  }
 }
 
 @media only screen and (max-width: 850px) {
   .highlights figcaption {
     left: 18%;
   }
-  .side-nav img{
-    left:-12%;
+  .side-nav {
+    width: 30%;
   }
 
   .section-why .blocks {
@@ -515,6 +568,13 @@
   .side-nav {
     display: none;
   }
+  .checkbtn {
+    margin-right: 0rem;
+  }
+  .section-hero {
+    height: fit-content;
+  }
+  
 
   .section-why .blocks .block1,
   .section-why .blocks .block2 {
@@ -525,22 +585,6 @@
 
   .section-why h2 {
     font-size: 3rem;
-  }
-
-  .faqs-testimonials-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .testimonials-section h2 {
-    text-align: center;
-  }
-  .faqs-section h2 {
-    text-align: center;
-  }
-  .faqs-section {
-    width: 90%;
-    margin: auto;
   }
   .section-blog .blocks {
     display: flex;
@@ -557,70 +601,66 @@
   .fb-page {
     margin-bottom: 3rem;
   }
-  footer .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .brands-section .brand-wrapper .items {
+    width: 50%;
+    margin: 0 auto;
   }
-
-  footer .main .grid2 {
-    text-align: center;
-  }
-  footer .main .grid2 .contact-footer {
-    width: 100%;
-  }
-  footer .main .grid2 .contact-info {
-    width: 100%;
-    justify-content: center;
-  }
-  footer .main h3 {
-    width: 100%;
-    background: var(--grayish-blue);
-    margin: 0;
-  }
-
-  footer .main .grid1,
-  footer .main .grid2,
-  footer .main .grid3 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.5rem;
-  }
-  footer .main .grid2 .contact-info:nth-child(4) {
-    margin-left: 1rem;
-  }
-  footer .main .grid2 .contact-info img {
-    width: 5%;
-  }
-  footer .main .grid1,
-  footer .main .grid3 {
-    text-align: center;
-  }
-  footer .main p,
-  footer .main .grid1 li a {
-    font-size: 1.8rem;
-  }
-  footer .main .contact-footer .footer-logo {
-    margin: 0;
-  }
-  .social-media-links ul li a img {
-    width: 30%;
-  }
-
-  .social-media-links ul {
+  .brands-section .brand-wrapper .items img {
     width: 100%;
     height: 20vh;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    margin-left: 0rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
+  .section-hero .hero-text {
+    display: block;
+    position: relative;
+  }
+ 
+  .section-hero .hero-text .buttonslider {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+  .section-hero .hero-text{
+    padding-bottom: 15rem;
+  }
+  .section-hero .hero-text img{
+    display: none;
+  }
+
   .career-page .career-block .title .location {
     display: none;
   }
+  .brands-section .brand-wrapper .items {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .brands-section .brand-wrapper .items img {
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    margin-left: 0rem;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .section-hero .hero-text .buttonslider {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .section-hero .hero-text{
+    padding-bottom: 10rem;
+  }
+  .section-hero .hero-text img{
+    display: none;
+  }
+}
+
+
 @media only screen and (max-width: 555px) {
   .section-blog .box {
     width: 40rem;
@@ -631,11 +671,62 @@
     padding: 1rem 3rem;
     background: var(--grayish-blue);
   }
+  .section-hero .hero-text .buttonslider {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+  .section-hero .hero-text{
+    padding-bottom: 5rem;
+  }
   .side-nav {
     display: none;
   }
+  .section-hero .hero-text img{
+    display: none;
+  }
+ 
+  .brands-section .brand-wrapper .items {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .brands-section .brand-wrapper .items img {
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    margin-left: 0rem;
+  }
 }
 
-@media only screen and (max-width: 467px) {
-  
+@media only screen and (max-width: 495px) {
+  .faqs-testimonials-section .faqs-section .accordion {
+    margin-left: 0;
+  }
+  .faqs-testimonials-section .testimonials-section {
+    margin-left: 0;
+    width: 100%;
+  }
+  .section-hero .hero-text .buttonslider {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .section-hero .hero-text{
+    padding-bottom: 5rem;
+  }
+  .section-hero .hero-text img{
+    display: none;
+  }
+ 
+  .brands-section .brand-wrapper .items {
+    width: 50%;
+    /* background:red; */
+    margin: 0 auto;
+  }
+  .brands-section .brand-wrapper .items img {
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    margin-left: 0rem;
+  }
 }
