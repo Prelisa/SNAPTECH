@@ -1,0 +1,39 @@
+Project Structure
+
+[SNAP]
+    ├── [assets]
+    |    ├── [vanillaJS]
+    |    |    ├── plugins.js
+    |    |    ├── common.js 
+    |    ├── [css]
+    |    |    ├── addresponsive.css
+    |    |    ├── main.css   
+    |    ├── [fonts]
+    |    |    ├── ..
+    |    ├── [icons]
+    |    |    ├── ..
+    |    ├── [images]
+    |    |    ├── ..
+    |    ├── [products]
+    |    |    ├── ..
+    |    ├── [videos]
+    |    |    ├── ..
+    |    ├── [vendors]
+    |         ├── [css]
+    |         ├── [fonts]
+    |         ├── [js]
+    |
+    ├── [html]
+    |    ├── about.html
+    |    ├── blog-details.html
+    |    ├── blog.html
+    |    ├── contact.html
+    |    ├── portfolio.html
+    |    ├── products.html 
+    ├── main.html
+
+
+NOTE: 
+[name] == folder
+
+
