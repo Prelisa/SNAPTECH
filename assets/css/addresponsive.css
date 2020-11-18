@@ -8,10 +8,9 @@
     margin: auto;
   }
   section-blog p {
-    
     font-weight: 400;
     margin: 1rem auto;
-}
+  }
 }
 @media only screen and (max-width: 1500px) {
   .main-head nav {
@@ -110,6 +109,12 @@
   }
   .testimonials-section .card p {
     padding: 2rem 2.4rem;
+  }
+  .about-page .team-description {
+    margin: auto 0rem auto 21rem;
+  }
+  .about-page .about-right p {
+    padding-top: 4rem;
   }
 }
 
@@ -252,6 +257,39 @@
   .career-page h2 {
     padding-bottom: 3rem;
   }
+
+  .about-page .about-left .one {
+    width: 66%;
+  }
+  .about-page .about-left .two {
+    width: 43%;
+  }
+  .about-page .about-left .three {
+    width: 70%;
+  }
+  .about-page .about-left .four {
+    width: 66%;
+  }
+  .about-page .about-left .five {
+    width: 44%;
+  }
+  .about-page .about-right p {
+    width: 70%;
+    margin: auto 1rem auto auto;
+    padding-top: 6rem;
+  }
+  .about-page .numbers-list h1 {
+    font-size: 3rem;
+  }
+  .about-page .numbers-list h3 {
+    font-size: 1.6rem;
+  }
+  .about-page .team-description h1 {
+    font-size: 2rem;
+  }
+  .about-page .team-description h3 {
+    font-size: 1.6rem;
+  }
 }
 
 /*TABLETS AND IPADS SCREEN SIZE 768PX YO 1023PX*/
@@ -329,6 +367,10 @@
   .testimonials-section .for_slick_slider .items {
     margin: 0;
   }
+  .about-page .about-right p {
+    padding: 0;
+    margin: 6rem auto auto 12rem;
+  }
 }
 
 @media only screen and (max-width: 1010px) {
@@ -337,11 +379,17 @@
     top: 45%;
     left: 45%;
   }
-  .section-hero .hero-text{
+  .section-hero .hero-text {
     padding-bottom: 10rem;
   }
-  .section-hero .hero-text img{
+  .section-hero .hero-text img {
     display: none;
+  }
+  .about-page .team-description {
+    margin: auto 0rem auto 15rem;
+  }
+  .about-page .team-description img {
+    width: 77%;
   }
 }
 
@@ -511,6 +559,16 @@
     margin: 0 auto;
     margin-left: 0rem;
   }
+  .about-page .team-description {
+    width: 56%;
+    margin: auto auto auto 17rem;
+  }
+  .about-page .about-right p {
+    width: 90%;
+    margin: auto auto auto 6.5rem;
+
+    padding: 3rem;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -562,6 +620,21 @@
     flex: 0 0 0;
     text-align: center;
   }
+  .about-page .about-left .one {
+    top: 42%;
+  }
+  .about-page .about-right p {
+    padding-top: 0rem;
+  }
+  .about-page .about-left {
+    height: 70vh;
+  }
+  .about-page .numbers-list i {
+    font-size: 4rem;
+  }
+  .about-page .numbers-list h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -574,7 +647,6 @@
   .section-hero {
     height: fit-content;
   }
-  
 
   .section-why .blocks .block1,
   .section-why .blocks .block2 {
@@ -611,6 +683,33 @@
     margin: 0 auto;
     margin-left: 0rem;
   }
+  .about-page .about-right p {
+    width: 100%;
+    padding-top: 0;
+    margin: auto auto auto 4rem;
+  }
+  .about-page .numbers-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .numbers-list div {
+    width: 50%;
+    margin: 2rem;
+  }
+  .about-page .numbers-list i {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .about-page .numbers-list h1 {
+    font-weight: 400;
+    padding: 1rem;
+  }
+  .about-page .numbers-list h3 {
+    font-size: 2.3rem;
+  }
+  .about-page .about-right {
+    height: 90vh;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -618,16 +717,16 @@
     display: block;
     position: relative;
   }
- 
+
   .section-hero .hero-text .buttonslider {
     position: absolute;
     top: 35%;
     left: 40%;
   }
-  .section-hero .hero-text{
+  .section-hero .hero-text {
     padding-bottom: 15rem;
   }
-  .section-hero .hero-text img{
+  .section-hero .hero-text img {
     display: none;
   }
 
@@ -644,6 +743,77 @@
     margin: 0 auto;
     margin-left: 0rem;
   }
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .about-left {
+    width: 90%;
+    margin: auto;
+    flex: 1 1 23rem;
+    min-height: 0;
+  }
+  .about-page .about-left .one {
+    width: 71%;
+    top: 0;
+    left: 15%;
+  }
+  .about-page .about-left .two {
+    width: 31%;
+    display: none;
+  }
+  .about-page .about-left .three {
+    width: 46%;
+    display: none;
+  }
+  .about-page .about-left .four {
+    width: 39%;
+    top: 36%;
+    left: 34%;
+    display: none;
+  }
+  .about-page .about-left .five {
+    left: 62%;
+    top: 20%;
+    width: 31%;
+    display: none;
+  }
+  .about-page .about-right {
+    height: 90vh;
+  }
+  .about-page .about-right p {
+    width: 90%;
+    margin: auto;
+    padding-top: 8.3rem;
+    padding-bottom: 6rem;
+  }
+  .about-page .numbers-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-page .numbers-list div {
+    width: 50%;
+    margin: 2rem;
+  }
+  .about-page .numbers-list i {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .about-page .numbers-list h1 {
+    font-weight: 400;
+  }
+  .about-page .numbers-list h3 {
+    font-size: 2.3rem;
+  }
+  .about-page .team-description h1 {
+    font-size: 1.8rem;
+  }
+  .about-page .team-description h3 {
+    font-size: 1.5rem;
+  }
+  .about-page .about-right {
+    height: 90vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -652,14 +822,19 @@
     top: 40%;
     left: 40%;
   }
-  .section-hero .hero-text{
+  .section-hero .hero-text {
     padding-bottom: 10rem;
   }
-  .section-hero .hero-text img{
+  .section-hero .hero-text img {
     display: none;
   }
+  .about-page .about-right p {
+    padding-top: 2rem;
+  }
+  .about-page .about-right {
+    height: 90vh;
+  }
 }
-
 
 @media only screen and (max-width: 555px) {
   .section-blog .box {
@@ -676,16 +851,16 @@
     top: 30%;
     left: 40%;
   }
-  .section-hero .hero-text{
+  .section-hero .hero-text {
     padding-bottom: 5rem;
   }
   .side-nav {
     display: none;
   }
-  .section-hero .hero-text img{
+  .section-hero .hero-text img {
     display: none;
   }
- 
+
   .brands-section .brand-wrapper .items {
     width: 50%;
     margin: 0 auto;
@@ -695,6 +870,9 @@
     height: 15vh;
     margin: 0 auto;
     margin-left: 0rem;
+  }
+  .about-page .about-right p {
+    padding-top: 2rem;
   }
 }
 
@@ -711,13 +889,13 @@
     top: 40%;
     left: 40%;
   }
-  .section-hero .hero-text{
+  .section-hero .hero-text {
     padding-bottom: 5rem;
   }
-  .section-hero .hero-text img{
+  .section-hero .hero-text img {
     display: none;
   }
- 
+
   .brands-section .brand-wrapper .items {
     width: 50%;
     /* background:red; */
@@ -728,5 +906,18 @@
     height: 15vh;
     margin: 0 auto;
     margin-left: 0rem;
+  }
+  .about-page .team-description {
+    margin: auto auto auto 14rem;
+  }
+  .about-page .about-right p {
+    padding-top: 1rem;
+    margin: 4rem;
+    width: 90%;
+  }
+  .about-page .about-left .one {
+    left: 5%;
+    width: 339px;
+    padding: 2rem;
   }
 }
