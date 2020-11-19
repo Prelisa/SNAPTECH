@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./blog-detail.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/addresponsive.css">
     <title>SnapTech Technology</title>
 </head>
 
@@ -20,37 +23,60 @@
         nonce="DIMREZf7"></script>
     <header class="main-head">
         <nav>
-            <div class="logo">
-                <img src="./Assets/images/logo/SNAP-1.png" alt="">
-            </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <div class="logo">
+                <img src="../assets/images/logo/SNAP-1.png" alt="">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ion-navicon-round"></i>
+            </label>
+            <ul class="main-nav ">
+                <li><a href="#" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
-                            <img src="./Assets/icons/company-expand.svg" alt="">
+                            <img src="../assets/icons/company-expand.svg" alt="">
+
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">About Company</a>
-                            <a href="#">Career</a>
+                            <a href="about.html">About Company</a>
+                            <a href="career.html">Career</a>
 
                         </div>
                     </div>
 
                 </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">IT Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="products.html" class="dropbtn">Services
+                            <img src="../assets/icons/company-expand.svg" alt="">
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="products.html">CCTV</a>
+                            <a href="products.html">Laptops</a>
+                            <a href="products.html">Routers</a>
+                            <a href="products.html">Microphone</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
 
+            <!-- Phone -->
             <div class="side-nav">
-                <h1>Have any Questions?</h1>
-                <div class="phone">
-                    <img src="./Assets/icons/phone-call.svg" alt="">
-                    <h1> Tel: <a href="#">+9779860103098</a></h1>
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="texts">
+                    <h1>Have any Questions?</h1>
+
+                    <h1> <a href="#"> Tel:+9779860103098</a></h1>
                 </div>
+            </div>
+
         </nav>
 
     </header>
@@ -60,7 +86,7 @@
             <div class="card card-active">
 
                 <div class="card-image">
-                    <img src="./Assets/images/7.jpg" alt="">
+                    <img src="../assets/images/7.jpg" alt="">
                 </div>
 
                 <div class="card-details">
@@ -75,7 +101,7 @@
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="./Assets/images/6.jpg" alt="">
+                    <img src="../assets/images/6.jpg" alt="">
                 </div>
                 <div class="card-details">
                     <div class="card-title">
@@ -104,7 +130,7 @@
                         praesentium et fugit dolore harum accusantium, aperiam magnam aut! Rerum, tempore?
                     </p>
                     <figure>
-                        <img src="./Assets/images/3.jpg" alt="">
+                        <img src="../assets/images/3.jpg" alt="">
 
                     </figure>
                     <p>
@@ -137,11 +163,11 @@
 
         </div>
         <div class="share-block">
-            <img class="facebook" src="./Assets/icons/facebook (2).svg" alt="">
-            <img class="twitter" src="./Assets/icons/twitter (2).svg" alt="">
+            <img class="facebook" src="../assets/icons/facebook (2).svg" alt="">
+            <img class="twitter" src="../assets/icons/twitter (2).svg" alt="">
 
-            <img class="instagram" src="./Assets/icons/instagram.svg" alt="">
-            <img class="linkedin" src="./Assets/icons/linkedin.svg" alt="">
+            <img class="instagram" src="../assets/icons/instagram.svg" alt="">
+            <img class="linkedin" src="../assets/icons/linkedin.svg" alt="">
         </div>
     </section>
 
@@ -151,22 +177,24 @@
                 <h3>Contact Information</h3>
                 <div class="contact-footer">
                     <a href="#">
-                        <img class="footer-logo" src="./Assets/images/logo/SNAP-2.png" alt="">
+                        <img class="footer-logo" src="./assets/images/logo/SNAP-2.png" alt="">
                     </a>
                     <div class="contact-info">
-                        <img src="./Assets/icons/pin.svg" alt="">
+                        <i class="fa fa-map-marker"></i>
 
                         <p>Kupondole, Lalitpur</p>
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/phone.svg" alt="">
+
+                        <i class="fa fa-phone"></i>
 
                         <p>+9779860103099</p>
 
 
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/email.svg" alt="">
+                        <i class="fa fa-envelope"></i>
+
 
                         <p>info@snaptech.com</p>
 
@@ -196,10 +224,13 @@
                 <div class="social-media-links">
                     <ul>
                         <li><a href="#">
-                                <img src="./Assets/icons/twitter (1).svg" alt="">
+                                <i class="fa fa-twitter"></i>
                             </a></li>
                         <li><a href="#">
-                                <img src="./Assets/icons/facebook (1).svg" alt="">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-instagram"></i>
                             </a></li>
 
                     </ul>
