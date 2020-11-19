@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/addresponsive.css">
     <title>SnapTech Technology</title>
 </head>
 
@@ -20,37 +23,60 @@
         nonce="DIMREZf7"></script>
     <header class="main-head">
         <nav>
-            <div class="logo">
-                <img src="./Assets/images/logo/SNAP-1.png" alt="">
-            </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <div class="logo">
+                <img src="../assets/images/logo/SNAP-1.png" alt="">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ion-navicon-round"></i>
+            </label>
+            <ul class="main-nav ">
+                <li><a href="#" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
-                                <img src="./Assets/icons/company-expand.svg" alt="">
+                            <img src="../assets/icons/company-expand.svg" alt="">
+
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">About Company</a>
-                            <a href="#">Career</a>
+                            <a href="about.html">About Company</a>
+                            <a href="career.html">Career</a>
 
                         </div>
                     </div>
 
                 </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">IT Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="products.html" class="dropbtn">Services
+                            <img src="../assets/icons/company-expand.svg" alt="">
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="products.html">CCTV</a>
+                            <a href="products.html">Laptops</a>
+                            <a href="products.html">Routers</a>
+                            <a href="products.html">Microphone</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
 
+            <!-- Phone -->
             <div class="side-nav">
-                <h1>Have any Questions?</h1>
-                <div class="phone">
-                    <img src="./Assets/icons/phone-call.svg" alt="">
-                    <h1> Tel: <a href="#">+9779860103098</a></h1>
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="texts">
+                    <h1>Have any Questions?</h1>
+
+                    <h1> <a href="#"> Tel:+9779860103098</a></h1>
                 </div>
+            </div>
+
         </nav>
 
     </header>
@@ -63,26 +89,26 @@
         <div class="blocks first-block">
             <div class="box box1">
                 <a href="#">
-                    <img class="blog-image" src="./Assets/images/3.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/3.jpg" alt="">
                     <h3>Life as a Designer</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus necessitatibus
                         provident itaque tollo. Nobis laboriosam delectus nesciunt!</p>
                 </a>
             </div>
             <div class="box box2">
                 <a href="#">
-                    <img class="blog-image" src="./Assets/images/pexels-tirachard-kumtanom-733857.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/pexels-tirachard-kumtanom-733857.jpg" alt="">
                     <h3>Tech- Travel</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Loreme totam placeat, dolorum illum excepturi perferendis quibusdam aut harum,
                         distinctio hic dolore illo. Nobis laboriosam delectus nesciunt!</p>
                 </a>
             </div>
             <div class="box box3"> <a href="#">
-                    <img class="blog-image" src="./Assets/images/pexels-tranmautritam-225502.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/pexels-tranmautritam-225502.jpg" alt="">
                     <h3>Owning the Promise</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus necessitatibus
                         provident dolore illo. Nobis laboriosam delectus nesciunt!</p>
                 </a></div>
@@ -90,26 +116,26 @@
         <div class="blocks">
             <div class="box box1">
                 <a href="#">
-                    <img class="blog-image" src="./Assets/images/3.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/3.jpg" alt="">
                     <h3>Life as a Designer</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus necessitatibus
                         provident itaque tollo. Nobis laboriosam delectus nesciunt!</p>
                 </a>
             </div>
             <div class="box box2">
                 <a href="#">
-                    <img class="blog-image" src="./Assets/images/pexels-tirachard-kumtanom-733857.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/pexels-tirachard-kumtanom-733857.jpg" alt="">
                     <h3>Tech- Travel</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Loreme totam placeat, dolorum illum excepturi perferendis quibusdam aut harum,
                         distinctio hic dolore illo. Nobis laboriosam delectus nesciunt!</p>
                 </a>
             </div>
             <div class="box box3"> <a href="#">
-                    <img class="blog-image" src="./Assets/images/pexels-tranmautritam-225502.jpg" alt="">
+                    <img class="blog-image" src="../assets/images/pexels-tranmautritam-225502.jpg" alt="">
                     <h3>Owning the Promise</h3>
-                    <img class="blog-icon" src="./Assets/icons/expand-button.svg" alt="">
+                    <img class="blog-icon" src="../assets/icons/expand-button.svg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus necessitatibus
                         provident dolore illo. Nobis laboriosam delectus nesciunt!</p>
                 </a></div>
@@ -131,22 +157,24 @@
                 <h3>Contact Information</h3>
                 <div class="contact-footer">
                     <a href="#">
-                        <img class="footer-logo" src="./Assets/images/logo/SNAP-2.png" alt="">
+                        <img class="footer-logo" src="./assets/images/logo/SNAP-2.png" alt="">
                     </a>
                     <div class="contact-info">
-                        <img src="./Assets/icons/pin.svg" alt="">
+                        <i class="fa fa-map-marker"></i>
 
                         <p>Kupondole, Lalitpur</p>
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/phone.svg" alt="">
+
+                        <i class="fa fa-phone"></i>
 
                         <p>+9779860103099</p>
 
 
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/email.svg" alt="">
+                        <i class="fa fa-envelope"></i>
+
 
                         <p>info@snaptech.com</p>
 
@@ -176,10 +204,13 @@
                 <div class="social-media-links">
                     <ul>
                         <li><a href="#">
-                                <img src="./Assets/icons/twitter (1).svg" alt="">
+                                <i class="fa fa-twitter"></i>
                             </a></li>
                         <li><a href="#">
-                                <img src="./Assets/icons/facebook (1).svg" alt="">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-instagram"></i>
                             </a></li>
 
                     </ul>
