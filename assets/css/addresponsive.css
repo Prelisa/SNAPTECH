@@ -178,6 +178,9 @@
   .grid2 .contact-info {
     width: 70%;
   }
+  .contact-page .company-logo {
+    margin-left: 2rem;
+  }
 }
 
 /*FOR BIG TABLETS*/
@@ -290,6 +293,9 @@
   .about-page .team-description h3 {
     font-size: 1.6rem;
   }
+  .contact-page .contact-form {
+    padding-left: 1rem;
+  }
 }
 
 /*TABLETS AND IPADS SCREEN SIZE 768PX YO 1023PX*/
@@ -370,6 +376,9 @@
   .about-page .about-right p {
     padding: 0;
     margin: 6rem auto auto 12rem;
+  }
+  .contact-page .contact-form {
+    padding-left: 0;
   }
 }
 
@@ -645,6 +654,9 @@
     margin: auto;
     padding-top: 3rem;
   }
+  .contact-page .company-logo {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -719,6 +731,9 @@
   }
   .about-page .about-right {
     height: 90vh;
+  }
+  .contact-page .company-logo {
+    width: 70%;
   }
 }
 
@@ -824,6 +839,23 @@
   .about-page .about-right {
     height: 90vh;
   }
+  .contact-page .contact-detail-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-page .contact-details {
+    width: 50%;
+    margin: auto;
+    padding-top: 4rem;
+  }
+  .contact-page .contact-form header h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .contact-page form {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -889,6 +921,11 @@
   }
   .about-page .about-right p {
     padding-top: 2rem;
+  }
+  .contact-page .contact-details {
+    width: 50%;
+    margin: auto;
+    padding-top: 4rem;
   }
 }
 

@@ -1732,7 +1732,8 @@ footer .small p {
 
 /***********************************************Contact Page******************************************/
 .contact-page {
-  background: var(--grayish-blue);
+  background: var(--medium-silver);
+  margin-top: 8.1vh;
 }
 .contact-page .contact-map {
   width: 100%;
@@ -1797,8 +1798,8 @@ footer .small p {
   width: 50%;
   padding-top: 11rem;
 }
-.contact-page .contact-details .contact-information img {
-  width: 3%;
+.contact-page .contact-details .contact-information i {
+  font-size: 2rem;
 }
 
 .contact-page .company-logo {
@@ -1828,7 +1829,7 @@ footer .small p {
   height: 40vh;
 }
 
-.contact-page .contact-page h1 {
+.contact-page h1 {
   font-size: 3rem;
   text-align: center;
   padding: 5rem 0 2rem 0;
