@@ -10,10 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./products.css">
-    <link rel="stylesheet" href="./mediaQuery.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/addresponsive.css">
+
     <title>SnapTech Technology</title>
 </head>
 
@@ -23,42 +25,63 @@
         nonce="DIMREZf7"></script>
     <header class="main-head">
         <nav>
-            <div class="logo">
-                <img src="./Assets/images/logo/SNAP-1.png" alt="">
-            </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
+            <div class="logo">
+                <img src="../assets/images/logo/SNAP-1.png" alt="">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="ion-navicon-round"></i>
+            </label>
+            <ul class="main-nav ">
+                <li><a href="#" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
-                            <img src="./Assets/icons/company-expand.svg" alt="">
+                            <img src="../assets/icons/company-expand.svg" alt="">
 
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">About Company</a>
-                            <a href="#">Career</a>
+                            <a href="about.html">About Company</a>
+                            <a href="career.html">Career</a>
 
                         </div>
                     </div>
 
                 </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">IT Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="products.html" class="dropbtn">Services
+                            <img src="../assets/icons/company-expand.svg" alt="">
+
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="products.html">CCTV</a>
+                            <a href="products.html">Laptops</a>
+                            <a href="products.html">Routers</a>
+                            <a href="products.html">Microphone</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
 
+            <!-- Phone -->
             <div class="side-nav">
-                <h1>Have any Questions?</h1>
-                <div class="phone">
-                    <img src="./Assets/icons/phone-call.svg" alt="">
-                    <h1> Tel: <a href="#">+9779860103098</a></h1>
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="texts">
+                    <h1>Have any Questions?</h1>
+
+                    <h1> <a href="#"> Tel:+9779860103098</a></h1>
                 </div>
+            </div>
+
         </nav>
 
     </header>
-
     <section class="product-page">
         <div class="header">
             <h2>Our Products</h2>
@@ -73,131 +96,136 @@
             <div class="product-block">
                 <div class="box box1">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
-
-                    </a>
-                    <div class="product-detail">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
                         <h3>CCTV Camera</h3>
-                    </div>
-                    <div class="product-detail-body">
-                        <div class="product-detail-body-items">
-                            <ul>
-                                <li><a href="#">one</a></li>
-                                <li><a href="#">two</a></li>
-                                <li><a href="#">three</a></li>
-                                <li><a href="#">four</a></li>
-                                <li><a href="#">five</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    </a>
+
                 </div>
 
 
 
                 <div class="box box2">
                     <a href="#">
-                        <img src="./Assets/products/pexels-pixabay-221011.jpg" alt="">
-
-                    </a>
-                    <div class="product-detail">
+                        <img src="../assets/images/products/pexels-pixabay-221011.jpg" alt="">
                         <h3>Laptops</h3>
-                    </div>
+                    </a>
+
                 </div>
                 <div class="box box3">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>Microphone</h3>
 
                     </a>
-                    <div class="product-detail">
-                        <h3>Microphone</h3>
-                    </div>
+
                 </div>
                 <div class="box box4">
                     <a href="#">
-                        <img src="./Assets/products/pexels-brett-sayles-2881224.jpg" alt="">
-
-                    </a>
-                    <div class="product-detail">
+                        <img src="../assets/images/products/pexels-brett-sayles-2881224.jpg" alt="">
                         <h3>Routers</h3>
-                    </div>
+
+                    </a>
+
+                </div>
+                <div class="box box1">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
+                    </a>
+
+                </div>
+                <div class="box box1">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
+                    </a>
+
+                </div>
+                <div class="box box1">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
+                    </a>
+
+                </div>
+                <div class="box box1">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
+                    </a>
+
+                </div>
+            </div>
+            <!-- <div class="product-block">
+                <div class="box box1">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
+                    </a>
+
+                </div>
+
+
+
+                <div class="box box2">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-pixabay-221011.jpg" alt="">
+                        <h3>Laptops</h3>
+                    </a>
+
+                </div>
+                <div class="box box3">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>Microphone</h3>
+
+                    </a>
+
+                </div>
+                <div class="box box4">
+                    <a href="#">
+                        <img src="../assets/images/products/pexels-brett-sayles-2881224.jpg" alt="">
+                        <h3>Routers</h3>
+
+                    </a>
+
                 </div>
             </div>
             <div class="product-block">
-                <div class="box box5">
+                <div class="box box1">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
-
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>CCTV Camera</h3>
                     </a>
-                    <div class="product-detail">
-                        <h3>Cables</h3>
-                    </div>
+
                 </div>
-                <div class="box box6">
+
+
+
+                <div class="box box2">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
-
+                        <img src="../assets/images/products/pexels-pixabay-221011.jpg" alt="">
+                        <h3>Laptops</h3>
                     </a>
-                    <div class="product-detail">
-                        <h3>servers</h3>
-                    </div>
-                </div>
-                <div class="box box7"><a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
 
-                    </a>
-                    <div class="product-detail">
-                        <h3>Television</h3>
-                    </div>
                 </div>
-                <div class="box box8">
+                <div class="box box3">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <img src="../assets/images/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <h3>Microphone</h3>
 
                     </a>
-                    <div class="product-detail">
-                        <h3>Phone</h3>
-                    </div>
-                </div>
 
-            </div>
-            <div class="product-block">
-                <div class="box box5">
+                </div>
+                <div class="box box4">
                     <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
+                        <img src="../assets/images/products/pexels-brett-sayles-2881224.jpg" alt="">
+                        <h3>Routers</h3>
 
                     </a>
-                    <div class="product-detail">
-                        <h3> list of products</h3>
-                    </div>
-                </div>
-                <div class="box box6">
-                    <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
 
-                    </a>
-                    <div class="product-detail">
-                        <h3>list of products</h3>
-                    </div>
                 </div>
-                <div class="box box7"><a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
-
-                    </a>
-                    <div class="product-detail">
-                        <h3>list of products</h3>
-                    </div>
-                </div>
-                <div class="box box8">
-                    <a href="#">
-                        <img src="./Assets/products/pexels-stanislav-kondratiev-2909225.jpg" alt="">
-
-                    </a>
-                    <div class="product-detail">
-                        <h3>List of products</h3>
-                    </div>
-                </div>
-
-            </div>
+            </div> -->
 
         </div>
         <div class="pagination">
@@ -219,22 +247,24 @@
                 <h3>Contact Information</h3>
                 <div class="contact-footer">
                     <a href="#">
-                        <img class="footer-logo" src="./Assets/images/logo/SNAP-2.png" alt="">
+                        <img class="footer-logo" src="./assets/images/logo/SNAP-2.png" alt="">
                     </a>
                     <div class="contact-info">
-                        <img src="./Assets/icons/pin.svg" alt="">
+                        <i class="fa fa-map-marker"></i>
 
                         <p>Kupondole, Lalitpur</p>
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/phone.svg" alt="">
+
+                        <i class="fas fa-phone-alt"></i>
 
                         <p>+9779860103099</p>
 
 
                     </div>
                     <div class="contact-info">
-                        <img src="./Assets/icons/email.svg" alt="">
+                        <i class="fa fa-envelope"></i>
+
 
                         <p>info@snaptech.com</p>
 
@@ -264,10 +294,13 @@
                 <div class="social-media-links">
                     <ul>
                         <li><a href="#">
-                                <img src="./Assets/icons/twitter (1).svg" alt="">
+                                <i class="fa fa-twitter"></i>
                             </a></li>
                         <li><a href="#">
-                                <img src="./Assets/icons/facebook (1).svg" alt="">
+                                <i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa fa-instagram"></i>
                             </a></li>
 
                     </ul>
@@ -286,7 +319,6 @@
     </footer>
 
 
-    <script src="./script.js"></script>
 </body>
 
 </html>

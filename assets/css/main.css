@@ -151,12 +151,12 @@ nav li a:hover {
   display: flex;
   justify-content: space-evenly;
   width: 15%;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .side-nav i {
-  font-size: 5rem;
+  font-size: 3rem;
   color: var(--theme-red);
-  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 .side-nav .texts h1 {
   font-size: 1.6rem;
@@ -1843,12 +1843,13 @@ footer .small p {
   justify-content: center;
   align-items: center;
   background: var(--lighter-grayish);
+  margin-top: 8vh;
 }
 
 .product-page .header {
   text-align: center;
   width: 70%;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .product-page .header h2 {
@@ -1859,52 +1860,47 @@ footer .small p {
   font-weight: 400;
 }
 
-.product-page .product-blocks {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: auto;
-  transform: scale(0.9);
-  padding: 1.5rem;
-}
 .product-page .product-block {
   display: flex;
-  width: 100%;
+  width: 90%;
   margin: auto;
+  padding: 2rem;
   flex-wrap: wrap;
-  position: relative;
+  justify-content: space-evenly;
 }
 
 .product-page .product-block .box {
   width: 35rem;
-  height: 30rem;
+  height: fit-content;
   margin: 1.5rem;
   display: flex;
+  position: relative;
   z-index: 1;
   flex-direction: column;
   background: var(--grayish-blue);
   transform: scale(1);
-  transition: transform 0.3s, background 0.3s;
+  transition: all 0.5s;
 }
 
 .product-page .product-block .box a img {
   width: 100%;
+  transition: all 0.3s;
 }
 
 .product-page .product-block .box a img:hover {
-  transform: scale(1.01);
+  transform: scale(0.9);
   cursor: pointer;
 }
 .product-page .product-block .box h3 {
   font-size: 1.8rem;
-  padding-top: 1.5rem;
-  padding-right: 4rem;
+  padding: 1.5rem 0;
   cursor: pointer;
   width: 90%;
+  margin: auto;
   text-align: center;
 }
 
-.product-page .product-block .product-detail h3::after {
+/* .product-page .product-block .product-detail h3::after {
   content: "\002B";
   font-size: 4rem;
   position: absolute;
@@ -1912,9 +1908,9 @@ footer .small p {
   top: 80%;
   right: 10%;
   transition: transform 0.2s ease-in-out;
-}
+} */
 
-.product-page .product-block .product-detail.active::after {
+/* .product-page .product-block .product-detail.active::after {
   transform: rotate(45deg);
 }
 
@@ -1929,9 +1925,9 @@ footer .small p {
   transition: max-height 0.3s ease-in-out;
   width: 21.25%;
   max-height: 0;
-}
+} */
 
-.product-page .product-detail-body ul {
+/* .product-page .product-detail-body ul {
   list-style-type: lower-roman;
   list-style-position: outside;
   font-size: 1.8rem;
@@ -1948,17 +1944,20 @@ footer .small p {
   width: 100%;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
-}
+} */
 
 .product-page .pagination {
   display: flex;
-  padding-bottom: 5rem;
+  width: 50%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  justify-content: space-evenly;
 }
 
 .product-page .pagination a {
-  color: black;
   float: left;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   text-decoration: none;
 }
 

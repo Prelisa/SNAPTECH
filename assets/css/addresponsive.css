@@ -19,7 +19,7 @@
   }
 
   .main-head .side-nav i {
-    font-size: 4rem;
+    margin-right: 1rem;
   }
   /*hero*/
   .hero-text {
@@ -577,6 +577,11 @@
     margin: auto auto auto 6.5rem;
 
     padding: 3rem;
+  }
+  .product-page .product-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 
