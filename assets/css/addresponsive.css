@@ -116,6 +116,12 @@
   .about-page .about-right p {
     padding-top: 4rem;
   }
+  .product-detail .side-bar {
+    margin-left: 1rem;
+  }
+  .product-detail .details-block {
+    flex: 1 1 25rem;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -180,6 +186,17 @@
   }
   .contact-page .company-logo {
     margin-left: 2rem;
+  }
+  .product-detail .details-block p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .product-detail .side-bar {
+    flex: 1 1 20rem;
+    margin-left: 2rem;
+  }
+  .product-detail .image-block {
+    flex: 1 1 35rem;
   }
 }
 
@@ -380,6 +397,20 @@
   .contact-page .contact-form {
     padding-left: 0;
   }
+  .product-detail .side-bar {
+    flex: 1 1 25rem;
+  }
+  .product-detail .details-block p {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    flex: 1 1 20rem;
+  }
+  .product-detail .details-block a {
+    margin-left: 2rem;
+  }
+  .product-detail .image-block {
+    margin-top: 5rem;
+  }
 }
 
 @media only screen and (max-width: 1010px) {
@@ -399,6 +430,12 @@
   }
   .about-page .team-description img {
     width: 77%;
+  }
+  .product-detail .side-bar {
+    flex: 1 1 20rem;
+  }
+  .product-detail .image-block {
+    flex: 1 1 35rem;
   }
 }
 
@@ -582,6 +619,32 @@
     display: flex;
     align-items: center;
     width: 100%;
+  }
+  .product-detail .product-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .product-detail .details-block {
+    width: 90%;
+    margin: auto !important;
+    padding-bottom: 5rem;
+  }
+  .product-detail .image-block {
+    width: 90%;
+    margin: auto;
+  }
+  .product-detail .side-bar {
+    width: 86%;
+    margin: auto;
+  }
+  .product-detail .back-arrow {
+    width: 2.3%;
+    left: 8%;
+    top: 5.5%;
+  }
+  .product-detail h2 {
+    margin: 0;
+    text-align: center;
   }
 }
 

@@ -1976,6 +1976,7 @@ footer .small p {
   background: transparent;
   padding: 5rem 0;
   position: relative;
+  margin-top: 8vh;
 }
 .product-detail h2 {
   font-size: 3rem;
