@@ -47,6 +47,7 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 5000;
+  max-width: 100%;
 }
 .logo img {
   width: 100%;
@@ -1600,7 +1601,9 @@ footer .small p {
 }
 
 .main-section .share-block {
+  position: -webkit-sticky;
   position: sticky;
+  bottom: 10px;
   display: flex;
   flex-direction: column;
   top: 15%;
