@@ -990,6 +990,9 @@
     overflow: hidden;
     padding-bottom: 2rem;
   }
+  .career-page h2 {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 555px) {

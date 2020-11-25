@@ -19,7 +19,6 @@ html {
 html,
 body {
   font-family: "Mulish", sans-serif;
-  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 h1 {
@@ -1619,12 +1618,17 @@ footer .small p {
 
 /***********************************************Career Page******************************************/
 
-.career-block {
-  width: 70%;
-  margin: auto auto 15rem auto;
+.career-page {
+  margin-top: 8vh;
 }
 
-.career-page.accordion-career {
+.career-block {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+.career-page .accordion-career {
   background-color: var(--lighter-grayish);
   color: black;
   cursor: pointer;
@@ -1692,7 +1696,7 @@ footer .small p {
 .career-page h2 {
   font-size: 4rem;
   text-align: center;
-  padding: 8rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 4rem 2rem;
 }
 
 .career-page .accordion-career .title {
