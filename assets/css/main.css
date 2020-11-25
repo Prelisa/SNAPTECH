@@ -14,6 +14,7 @@ html {
   --grayish-blue: #e1eaf0;
   --theme-red: #c04039;
   --theme-blue: #282f63;
+  overflow-x: hidden;
 }
 html,
 body {
