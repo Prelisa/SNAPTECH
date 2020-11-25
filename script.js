@@ -62,7 +62,7 @@ $(function () {
 
   });
 });
-
+$(".count").counterUp({ delay: 20, time: 1000 })
 $(function () {
   $('.multiple-images').slick({
     slidesToShow: 5,
@@ -206,3 +206,4 @@ $(document).ready(function () {
     $("#Sbtn2").removeClass("active");
   });
 });
+

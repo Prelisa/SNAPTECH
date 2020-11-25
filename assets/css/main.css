@@ -138,7 +138,7 @@ nav ul a:hover {
   width: 12%;
   position: absolute;
   top: 42%;
-  left: 90%;
+  left: 85%;
   animation: bouncing 2s;
 }
 
@@ -1620,7 +1620,7 @@ footer .small p {
   padding: 1rem;
 }
 
-.career-page.panel-career h3 {
+.career-page .panel-career h3 {
   font-size: 2rem;
   padding: 1rem;
 }
