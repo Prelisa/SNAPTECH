@@ -927,7 +927,7 @@ footer .small p {
 }
 .social-media-links ul li i {
   color: white;
-  font-size: 5rem;
+  font-size: 3.5rem;
   cursor: pointer;
 }
 .fa-twitter:hover {
@@ -947,9 +947,10 @@ footer .small p {
 /***********************************************PORTFOLIO******************************************/
 .portfolio-page {
   width: 100%;
-  height: 110vh;
   display: flex;
   flex-direction: column;
+  margin-top: 8vh;
+  height: fit-content;
 }
 
 .portfolio-page h2 {
@@ -963,53 +964,42 @@ footer .small p {
 }
 
 .portfolio-page .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding: 4rem;
 }
 
 .portfolio-page .box {
   position: relative;
-  width: 350px;
-  height: 350px;
-  margin: 0 15px;
+  width: 35rem;
+  height: fit-content;
+  margin: 1.5rem;
   text-align: center;
   overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.portfolio-page .container .box .img,
-.portfolio-page .container .box .img1,
-.portfolio-page .container .box .img2 {
+.portfolio-page .container .box .img {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(./Assets/images/2.jpg);
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: 0 0 !important;
+}
+.portfolio-page .container .box img {
+  width: 100%;
 }
 
-.portfolio-page .container .box .img1 {
-  background: url(./Assets/images/3.jpg);
-}
-.portfolio-page .container .box .img2 {
-  background: url(./Assets/images/4.jpg);
-}
-
-.portfolio-page .container .box .overlay,
-.portfolio-page .container1 .box1 .overlay {
+.portfolio-page .container .box .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99.5%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.portfolio-page .container .box .overlay2,
-.portfolio-page .container1 .box1 .overlay2 {
+.portfolio-page .container .box .overlay2 {
   position: absolute;
   top: 0%;
   left: -150%;
@@ -1020,13 +1010,11 @@ footer .small p {
   transition: 0.5s;
 }
 
-.portfolio-page .container .box:hover .overlay2,
-.portfolio-page .container1 .box1:hover .overlay2 {
+.portfolio-page .container .box:hover .overlay2 {
   left: -10%;
 }
 
-.portfolio-page .container .box .text,
-.portfolio-page .container1 .box1 .text {
+.portfolio-page .container .box .text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1038,8 +1026,7 @@ footer .small p {
   z-index: 1000;
   text-shadow: 5px 5px 10px black;
 }
-.portfolio-page .container .box .text span:nth-child(1),
-.portfolio-page .container1 .box1 .text span:nth-child(1) {
+.portfolio-page .container .box .text span:nth-child(1) {
   position: absolute;
   top: 0;
   left: -20px;
@@ -1050,8 +1037,7 @@ footer .small p {
   transition: 0.7s ease-in-out;
   transition-delay: 0.7s;
 }
-.portfolio-page .container .box .text span:nth-child(2),
-.portfolio-page .container1 .box1 .text span:nth-child(2) {
+.portfolio-page .container .box .text span:nth-child(2) {
   position: absolute;
   top: -20px;
   left: 0;
@@ -1062,8 +1048,7 @@ footer .small p {
   transition: 0.7s ease-in-out;
   transition-delay: 0.6s;
 }
-.portfolio-page .container .box .text span:nth-child(3),
-.portfolio-page .container1 .box1 .text span:nth-child(3) {
+.portfolio-page .container .box .text span:nth-child(3) {
   position: absolute;
   bottom: 0;
   right: -20px;
@@ -1074,8 +1059,7 @@ footer .small p {
   transition: 0.7s ease-in-out;
   transition-delay: 0.9s;
 }
-.portfolio-page .container .box .text span:nth-child(4),
-.portfolio-page .container1 .box1 .text span:nth-child(4) {
+.portfolio-page .container .box .text span:nth-child(4) {
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -1088,21 +1072,16 @@ footer .small p {
 }
 
 .portfolio-page .container .box:hover .text span:nth-child(1),
-.portfolio-page .container .box:hover .text span:nth-child(3),
-.portfolio-page .container1 .box1:hover .text span:nth-child(1),
-.portfolio-page .container1 .box1:hover .text span:nth-child(3) {
+.portfolio-page .container .box:hover .text span:nth-child(3) {
   width: 115%;
 }
 
 .portfolio-page .container .box:hover .text span:nth-child(2),
-.portfolio-page .container .box:hover .text span:nth-child(4),
-.portfolio-page .container1 .box1:hover .text span:nth-child(2),
-.portfolio-page .container1 .box1:hover .text span:nth-child(4) {
+.portfolio-page .container .box:hover .text span:nth-child(4) {
   height: 115%;
 }
 
-.portfolio-page .container .box .text h2,
-.portfolio-page .container1 .box1 .text h2 {
+.portfolio-page .container .box .text h2 {
   position: relative;
   color: white;
   margin-bottom: 0;
@@ -1112,14 +1091,12 @@ footer .small p {
   transform: translateY(-10px);
 }
 
-.portfolio-page .container .box:hover .text h2,
-.portfolio-page .container1 .box1:hover .text h2 {
+.portfolio-page .container .box:hover .text h2 {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 1.6s;
 }
-.portfolio-page .container .box .text p,
-.portfolio-page .container1 .box1 .text p {
+.portfolio-page .container .box .text p {
   line-height: 1.2;
   opacity: 0;
   color: white;
@@ -1127,46 +1104,10 @@ footer .small p {
   transition: 0.5s;
   transition-timing-function: linear;
 }
-.portfolio-page .container .box:hover .text p,
-.portfolio-page .container1 .box1:hover .text p {
+.portfolio-page .container .box:hover .text p {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 1.7s;
-}
-
-.portfolio-page .container1 {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-}
-.portfolio-page .box1 {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  margin: 0 15px;
-  text-align: center;
-  overflow: hidden;
-}
-.portfolio-page .container1 .box1 .img,
-.portfolio-page .container1 .box1 .img1,
-.portfolio-page .container1 .box1 .img2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url(./Assets/images/5.jpg);
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: 0 0 !important;
-}
-
-.portfolio-page .container1 .box1 .img1 {
-  background: url(./Assets/images/6.jpg);
-}
-.portfolio-page .container1 .box1 .img2 {
-  background: url(./Assets/images/7.jpg);
 }
 
 /***********************************************ABOUT PAGE******************************************/
