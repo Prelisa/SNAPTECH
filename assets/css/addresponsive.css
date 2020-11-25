@@ -122,6 +122,9 @@
   .product-detail .details-block {
     flex: 1 1 25rem;
   }
+  .main-section .left-block {
+    flex: 1 1 40rem;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -313,6 +316,9 @@
   .contact-page .contact-form {
     padding-left: 1rem;
   }
+  .main-section .left-block {
+    flex: 1 1 46rem;
+  }
 }
 
 /*TABLETS AND IPADS SCREEN SIZE 768PX YO 1023PX*/
@@ -442,6 +448,27 @@
 /*Phones and smaller tablets*/
 
 @media only screen and (max-width: 950px) {
+  .main-section .share-block {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    display: flex;
+    bottom: 5px;
+    z-index: 1;
+    /* overflow: hidden; */
+    flex-direction: column;
+    top: 15%;
+    width: fit-content;
+    padding-top: 5rem;
+  }
+  .main-section .share-block i {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+  }
+
+  .main-section .share-block img:hover {
+    transform: scale(0.9);
+  }
+
   .side-nav h1,
   .side-nav a {
     font-size: 1.3rem;
@@ -565,10 +592,11 @@
   footer .main .contact-footer .footer-logo {
     margin: 0;
   }
-  .social-media-links ul li a img {
-    width: 30%;
-  }
 
+  footer .social-media-links {
+    width: 70%;
+    margin: auto;
+  }
   .social-media-links ul {
     width: 100%;
     height: 20vh;
@@ -645,6 +673,18 @@
   .product-detail h2 {
     margin: 0;
     text-align: center;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-section .right-block {
+    width: 90%;
+    margin: auto;
+  }
+  .main-section .left-block {
+    width: 90%;
+    margin: 1rem auto;
   }
 }
 

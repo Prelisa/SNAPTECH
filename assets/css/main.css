@@ -18,7 +18,7 @@ html {
 html,
 body {
   font-family: "Mulish", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 h1 {
@@ -43,6 +43,7 @@ a {
   box-shadow: 5px 5px 10px #858688, -5px -5px 10px #95989a;
 
   position: fixed;
+  top: 0;
   justify-content: center;
   align-items: center;
   z-index: 5000;
@@ -925,11 +926,18 @@ footer .small p {
   color: white;
   font-size: 5rem;
 }
-.social-media-links ul li :nth-child(1):hover {
-  color: blue;
+.fa-twitter:hover {
+  color: #00acee;
 }
-.social-media-links ul li :nth-child(2):hover {
-  color: black;
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+.social-media-links ul li .fa-instagram:hover {
+  color: #d6249f;
+  opacity: 0.6;
+}
+.social-media-links ul li .fa-linkedin-in:hover {
+  color: #0e76a8;
 }
 
 /***********************************************PORTFOLIO******************************************/
@@ -1469,15 +1477,14 @@ footer .small p {
   margin-top: 10vh;
 }
 .main-section .left-block {
-  width: 20%;
   background: var(--grayish-blue);
-  flex: 1 1 20rem;
+  width: 25%;
   margin: 2rem 0 2rem 2rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .main-section .right-block {
-  width: 40%;
-  flex: 1 1 100rem;
+  height: fit-content;
+  width: 75%;
   background: var(--lighter-grayish);
   margin: 2rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -1487,10 +1494,11 @@ footer .small p {
 .main-section .blog-wrapper {
   width: 90%;
   margin: auto auto 7rem auto;
+  padding: 2rem;
 }
 .main-section .blog-wrapper .title {
-  font-size: 4rem;
-  padding: 5rem 0 1rem 0;
+  font-size: 3rem;
+  padding: 2rem 0 1rem 0;
   font-weight: 600;
 }
 .main-section .blog-wrapper .date {
@@ -1544,32 +1552,32 @@ footer .small p {
 }
 
 .main-section .card {
-  width: 100%;
-  height: 15vh;
+  width: fit-content;
+  height: fit-content;
   background: var(--lighter-grayish);
   border-left: 0.4rem solid var(--lighter-grayish);
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
   transition: all 0.2s ease-in;
+  padding: 2rem 0;
 }
 
 .main-section .card .card-image img {
   width: 100%;
   object-fit: cover;
-  padding: 2rem;
 }
 .main-section .card-image {
-  flex: 1 1 22.5rem;
+  width: 40%;
 }
 
 .main-section .card-details {
-  flex: 1 1 40rem;
-  height: 80%;
+  width: 60%;
+  padding: 1.5rem;
 }
 
 .main-section .card-details .card-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -1586,18 +1594,17 @@ footer .small p {
 .main-section .card-active {
   border-left: 0.4rem solid red;
 }
+
 .main-section .share-block {
   position: fixed;
   display: flex;
   flex-direction: column;
-  background: var(--grayish-blue);
-  width: 2.5%;
-  margin: auto;
-  left: 29%;
-  top: 21%;
+  top: 15%;
+  width: fit-content;
+  padding-top: 5rem;
 }
-.main-section .share-block img {
-  width: 80%;
+.main-section .share-block i {
+  font-size: 2.5rem;
   margin: 0.5rem;
 }
 
