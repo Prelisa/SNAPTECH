@@ -36,7 +36,7 @@
                 <i class="ion-navicon-round"></i>
             </label>
             <ul class="main-nav ">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="../main.html" class="active">Home</a></li>
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropbtn">Company
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="team">
+        <div class="team" id="team">
             <h2>Our Team</h2>
             <div class="team-description multiple-items-team">
 
@@ -219,18 +219,17 @@
             <div class="grid1">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">IT Services</a></li>
-                    <li><a href="#">Why us?</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Meet our Team</a></li>
-                    <li><a href="#">Customer Testimonials</a></li>
-
+                    <li><a href="../main.html">Home</a></li>
+                    <li><a href="./about.html">Company</a></li>
+                    <li><a href="../main.html#services">IT Services</a></li>
+                    <li><a href="../main.html#why">Why us?</a></li>
+                    <li><a href="./blog.html">Blogs</a></li>
+                    <li><a href="../main.html#faq">FAQs</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./career.html">Careers</a></li>
+                    <li><a href="../main.html#brands">Brands</a></li>
+                    <li><a href="./about.html#team">Meet our Team</a></li>
+                    <li><a href="../main.html#testimonials">Customer Testimonials</a></li>
                 </ul>
             </div>
 
@@ -277,9 +276,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous"></script>
+    <script src="../assets/VanillaJS/plugins.js"></script>
 
-    <script src="../script.js"></script>
     <script src="../assets/vendors/js/slick.js"></script>
+    <script>
+        $(".count").counterUp({ delay: 20, time: 1000 });
+    </script>
 
 
 </body>

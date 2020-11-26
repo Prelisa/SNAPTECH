@@ -254,6 +254,7 @@ nav li a:hover {
   background: #d5dee3;
   color: #000;
   transition: all 0.2s ease-out;
+  outline: none;
 }
 .hero-text button:hover {
   background: var(--theme-blue);
